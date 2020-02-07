@@ -1,0 +1,23 @@
+{
+  "name": "gorpipe-website",
+  "version": "1.0.0",
+  "description": "The GORpipe website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "author": "Genuity dev team",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "gray-matter": "^4.0.2",
+    "next": "^9.2.1",
+    "raw-loader": "^4.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-markdown": "^4.3.1"
+  }
+}
