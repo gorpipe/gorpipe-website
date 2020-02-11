@@ -2,6 +2,7 @@
 
 .layout {
   margin: 0 auto;
-  padding: 0 $space;
-  max-width: $maxWidth + ($space * 2);
+  padding: 0 $doubleSpace;
+  max-width: $maxWidth + ($doubleSpace * 2);
+  position: relative;
 }

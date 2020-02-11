@@ -3,7 +3,12 @@
 
 .Header {
   @include font-montserrat;
-  padding: $space 0;
+  padding: $doubleSpace 0;
+
+  @media (min-width: $tablet) {
+    padding: $tripleSpace 0;
+    display: flex;
+  }
 
   &__logo {
     display: block;
@@ -23,11 +28,50 @@
       left: 0;
       right: 0;
       background: #fff;
-      padding: $space;
+      padding: $doubleSpace;
+    }
 
-      &__item {
-        display: block;
+    @media (min-width: $tablet) {
+      margin-left: auto;
+
+      li {
+        display: inline-block;
+      }
+    }
+
+    &__item {
+      display: block;
+
+      @media (max-width: $to-tablet) {
         line-height: 4;
+      }
+
+      @media (min-width: $tablet) {
+        padding: 15px $space;
+        font-size: 14px;
+      }
+
+      @media (min-width: 850px) {
+        padding: 14px $space;
+        font-size: 16px;
+      }
+
+      @media (min-width: $desktop) {
+        padding: 14px $tripleSpace;
+      }
+
+      &__ghcallout {
+        @media (min-width: $tablet) {
+          padding: 11px 16px;
+          margin: 3px 12px;
+          background: $blue;
+          border-radius: 21px;
+          font-weight: bold;
+
+          a {
+            color: #fff;
+          }
+        }
       }
     }
   }
@@ -40,8 +84,8 @@
     height: 40px;
     width: 40px;
     position: absolute;
-    top: $space;
-    right: $space;
+    top: $doubleSpace;
+    right: $doubleSpace;
     overflow: hidden;
     background: #fff;
 

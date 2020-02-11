@@ -1,6 +1,8 @@
-$space: 16px;
+$space: 8px;
 $halfSpace: $space/2;
 $doubleSpace: $space * 2;
+$tripleSpace: $space * 3;
+$quadSpace: $space * 4;
 
 $maxWidth: 1440px;
 
@@ -11,5 +13,6 @@ $tablet: 720px; // from tablet size and up
 $desktop: 1080px;
 
 $black: #191a1c;
+$blue: #0062ff;
 
 $basicBorder: 1px solid #dee2e6;
