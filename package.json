@@ -12,6 +12,7 @@
   "author": "Genuity dev team",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.2.6",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
     "next": "^9.2.1",
@@ -19,5 +20,11 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-markdown": "^4.3.1"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-react-svg": "^1.1.0",
+    "node-sass": "^4.13.1"
   }
 }

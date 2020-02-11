@@ -1,0 +1,7 @@
+@import "styles/variables";
+
+.layout {
+  margin: 0 auto;
+  padding: 0 $space;
+  max-width: $maxWidth + ($space * 2);
+}

@@ -1,0 +1,15 @@
+$space: 16px;
+$halfSpace: $space/2;
+$doubleSpace: $space * 2;
+
+$maxWidth: 1440px;
+
+// breakpoints
+$mobile: 420px;
+$to-tablet: 719px; // up to tablet size (use with max-width)
+$tablet: 720px; // from tablet size and up
+$desktop: 1080px;
+
+$black: #191a1c;
+
+$basicBorder: 1px solid #dee2e6;

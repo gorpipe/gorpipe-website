@@ -1,0 +1,48 @@
+@import "./reset";
+@import "./fonts.css";
+@import "./variables";
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll; // always show the vertical scrollbar so that content doesn't jump
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+}
+
+// inherited from <html>
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.25 "Roboto", sans-serif;
+  text-size-adjust: 100%; // iOS on orientation change
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}

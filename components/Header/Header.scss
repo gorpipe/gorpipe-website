@@ -1,0 +1,82 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.Header {
+  @include font-montserrat;
+  padding: $space 0;
+
+  &__logo {
+    display: block;
+    width: 96px;
+  }
+
+  &__menu {
+    a {
+      color: $black;
+    }
+
+    @media (max-width: $to-tablet) {
+      display: none;
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: $space;
+
+      &__item {
+        display: block;
+        line-height: 4;
+      }
+    }
+  }
+
+  &_open &__menu {
+    display: block;
+  }
+
+  &__navtrigger {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: $space;
+    right: $space;
+    overflow: hidden;
+    background: #fff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      width: 20px;
+      height: 2px;
+      background: #000;
+      transition: transform 0.3s ease-out;
+    }
+
+    &::after {
+      top: auto;
+      bottom: 15px;
+    }
+
+    > span {
+      position: absolute;
+      left: -300px;
+    }
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &_open &__navtrigger::before {
+    transform: translateY(3px) rotate(135deg);
+  }
+
+  &_open &__navtrigger::after {
+    transform: translateY(-5px) rotate(45deg);
+  }
+}

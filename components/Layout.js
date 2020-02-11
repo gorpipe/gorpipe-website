@@ -1,16 +1,12 @@
-import Header from "./Header";
+import Header from "./Header/Header";
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD"
-};
+import s from "./Layout.scss";
 
 const Layout = props => (
-  <section style={layoutStyle}>
+  <div className={s.layout}>
     <Header />
-    {props.children}
-  </section>
+    <main className={s.main}>{props.children}</main>
+  </div>
 );
 
 export default Layout;
