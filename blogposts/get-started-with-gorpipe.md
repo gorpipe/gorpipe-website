@@ -1,5 +1,5 @@
 ---
-title: How to get started with GORpipe
+title: "How to get started with GORpipe"
 author: "Alison McNeil"
 date: "2020-02-04"
 image: /gorpipe.jpg

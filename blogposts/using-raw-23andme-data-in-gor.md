@@ -1,5 +1,5 @@
 ---
-title: Using raw 23andme data in GOR
+title: "Using raw 23andme data in GOR"
 author: "Hafþór Bryndísarson"
 date: "2020-02-06"
 image: /gorpipe.jpg
