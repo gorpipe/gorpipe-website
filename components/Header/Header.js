@@ -16,12 +16,12 @@ const Header = () => {
     <header className={headerClasses}>
       <Link href="/">
         <a className={style.Header__logo}>
-          <GORLogoText title="GOR" width="96" height="42.75" />
+          <GORLogoText title="GOR" />
         </a>
       </Link>
       <nav className={style.Header__menu}>
         <ul>
-          <NavLink text="Download" href="/" />
+          <NavLink text="Download" href="/download" />
           <NavLink text="Documentation" href="/docs" />
           <NavLink text="Tutorials" href="/tutorials" />
           <NavLink text="Community" href="/community" />
