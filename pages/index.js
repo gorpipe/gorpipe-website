@@ -8,8 +8,8 @@ const Index = () => {
         <h1>Open Source Genomic Insights at Scale</h1>
         <p>
           Born at <strong>deCODE genetics</strong>, the pioneers for population
-          scale genomic research. Raised by <strong>Genuity Science</strong>,
-          the global genomics data and insights partner.
+          scale genomic research. Raised by <strong>WuXi NextCODE</strong>, the
+          global genomics data and insights partner.
         </p>
         <Link href="/download">
           <a>Download</a>
