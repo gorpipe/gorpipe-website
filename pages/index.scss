@@ -1,0 +1,138 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.Index {
+  &__header {
+    background: url("/cover1.jpg") no-repeat top center / cover;
+    @include font-montserrat;
+    color: #fff;
+    padding: 50px 0 30px;
+
+    @media (min-width: $tablet) {
+      padding: 70px 0 50px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 150px 0 120px;
+    }
+
+    &__wrapper {
+      @include grid-wrapper;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      max-width: 670px;
+
+      @media (min-width: $tablet) {
+        font-size: 56px;
+      }
+    }
+
+    &__byline {
+      font-size: 20px;
+      line-height: 1.5;
+      max-width: 670px;
+      margin-top: $space * 4;
+
+      @media (min-width: $tablet) {
+        font-size: 28px;
+        margin-top: $space * 7;
+      }
+
+      a,
+      a:visited,
+      a:hover {
+        color: #fff;
+      }
+    }
+
+    &__logos {
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: $tablet) {
+        justify-content: left;
+      }
+    }
+
+    &__logo {
+      height: 60px;
+      width: 60px;
+      background: #fff;
+      border-radius: 50%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > img {
+        margin-top: -3px;
+        height: 70%;
+      }
+
+      &:first-child {
+        margin-right: $tripleSpace;
+      }
+
+      @media (min-width: $tablet) {
+        margin-top: 30px;
+        height: 100px;
+        width: 100px;
+
+        > img {
+          margin-top: -7px;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        margin-top: 50px;
+        height: 120px;
+        width: 120px;
+      }
+    }
+
+    &__callouts {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: $tablet) {
+        margin-top: 160px;
+      }
+
+      @media (min-width: $desktop) {
+        margin-top: 220px;
+      }
+
+      @media (max-width: $to-tablet) {
+        flex-direction: column;
+      }
+      @media (min-width: $tablet) {
+        flex-direction: row;
+      }
+    }
+
+    &__callout {
+      background: #fff;
+      border-radius: 100px;
+      text-transform: uppercase;
+      color: $blue;
+      font-weight: bold;
+      padding: $doubleSpace 0;
+      width: 255px;
+      text-align: center;
+
+      &:first-child {
+        @media (max-width: $to-tablet) {
+          margin-bottom: $quadSpace;
+        }
+        @media (min-width: $tablet) {
+          margin-right: $quadSpace;
+        }
+      }
+    }
+  }
+}

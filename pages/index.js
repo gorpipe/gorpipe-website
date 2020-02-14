@@ -1,22 +1,42 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 
+import style from "./index.scss";
+
 const Index = () => {
   return (
     <Layout>
-      <section>
-        <h1>Open Source Genomic Insights at Scale</h1>
-        <p>
-          Born at <strong>deCODE genetics</strong>, the pioneers for population
-          scale genomic research. Raised by <strong>WuXi NextCODE</strong>, the
-          global genomics data and insights partner.
-        </p>
-        <Link href="/download">
-          <a>Download</a>
-        </Link>
-        <Link href="/docs">
-          <a>Documentation</a>
-        </Link>
+      <section className={style.Index__header}>
+        <div className={style.Index__header__wrapper}>
+          <h1>Open Source Genomic Insights at Scale</h1>
+          <p className={style.Index__header__byline}>
+            Born at{" "}
+            <a href="https://www.decode.com/">
+              <strong>deCODE genetics</strong>
+            </a>
+            , the pioneers for population scale genomic research. Raised by{" "}
+            <a href="https://www.wuxinextcode.com">
+              <strong>WuXi NextCODE</strong>
+            </a>
+            , the global genomics data and insights partner.
+          </p>
+          <div className={style.Index__header__logos}>
+            <div className={style.Index__header__logo}>
+              <img src="/ie-logo.png" title="deCODE genetics corporate logo" />
+            </div>
+            <div className={style.Index__header__logo}>
+              <img src="/ie-logo.png" title="deCODE genetics corporate logo" />
+            </div>
+          </div>
+          <div className={style.Index__header__callouts}>
+            <Link href="/download">
+              <a className={style.Index__header__callout}>Download</a>
+            </Link>
+            <Link href="/docs">
+              <a className={style.Index__header__callout}>Documentation</a>
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section>

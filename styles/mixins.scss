@@ -1,3 +1,11 @@
+@import "styles/variables";
+
 @mixin font-montserrat {
   font-family: "Montserrat", sans-serif;
+}
+
+@mixin grid-wrapper {
+  max-width: $maxWidth + $quadSpace;
+  margin: 0 auto;
+  padding: 0 $doubleSpace;
 }

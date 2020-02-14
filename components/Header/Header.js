@@ -14,27 +14,29 @@ const Header = () => {
 
   return (
     <header className={headerClasses}>
-      <Link href="/">
-        <a className={style.Header__logo}>
-          <GORLogoText title="GOR" />
-        </a>
-      </Link>
-      <nav className={style.Header__menu}>
-        <ul>
-          <NavLink text="Download" href="/download" />
-          <NavLink text="Documentation" href="/docs" />
-          <NavLink text="Tutorials" href="/tutorials" />
-          <NavLink text="Community" href="/community" />
-          <NavLink text="Blog" href="/blog" />
-          <GHLink />
-        </ul>
-      </nav>
-      <button
-        onClick={() => setMenuOpen(!isMenuOpen)}
-        className={style.Header__navtrigger}
-      >
-        <span>Open menu</span>
-      </button>
+      <div className={style.Header__wrapper}>
+        <Link href="/">
+          <a className={style.Header__logo}>
+            <GORLogoText title="GOR" />
+          </a>
+        </Link>
+        <nav className={style.Header__menu}>
+          <ul>
+            <NavLink text="Download" href="/download" />
+            <NavLink text="Documentation" href="/docs" />
+            <NavLink text="Tutorials" href="/tutorials" />
+            <NavLink text="Community" href="/community" />
+            <NavLink text="Blog" href="/blog" />
+            <GHLink />
+          </ul>
+        </nav>
+        <button
+          onClick={() => setMenuOpen(!isMenuOpen)}
+          className={style.Header__navtrigger}
+        >
+          <span>Open menu</span>
+        </button>
+      </div>
     </header>
   );
 };

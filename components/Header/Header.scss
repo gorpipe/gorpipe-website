@@ -3,11 +3,15 @@
 
 .Header {
   @include font-montserrat;
-  padding: $doubleSpace 0;
 
-  @media (min-width: $tablet) {
-    padding: $tripleSpace 0;
-    display: flex;
+  &__wrapper {
+    padding: $doubleSpace;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &__logo {

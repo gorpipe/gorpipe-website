@@ -1,9 +1,6 @@
 @import "styles/variables";
 
 .Layout {
-  margin: 0 auto;
-  padding: 0 $doubleSpace;
-  max-width: $maxWidth + ($doubleSpace * 2);
   min-height: 100vh;
   position: relative;
   display: flex;

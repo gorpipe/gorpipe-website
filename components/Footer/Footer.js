@@ -40,7 +40,7 @@ const Footer = () => {
         Support
         <ul>
           <li>
-            <a>GitHub</a>
+            <a href="https://github.com/gorpipe/gorpipe">GitHub</a>
           </li>
           <li>
             <a>Release Notes</a>

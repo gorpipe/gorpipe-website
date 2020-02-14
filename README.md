@@ -4,7 +4,7 @@ This the GORpipe public website.
 
 ## Writing a blog post
 
-To write a blog post, create a markdown file in the blogposts directory. The file name should be both humand and url friendly, it will be used as the url slug. The posts should be written in [GitHub flavored markdown](https://guides.github.com/features/mastering-markdown/). All files should start with a front matter block like so:
+To write a blog post, create a markdown file in the blogposts directory. The file name should be both human and url friendly, it will be used as the url slug. The posts should be written in [GitHub flavored markdown](https://guides.github.com/features/mastering-markdown/). All files should start with a front matter block like so:
 
 ```yml
 ---
