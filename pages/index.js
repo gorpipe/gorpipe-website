@@ -85,42 +85,46 @@ const Index = () => {
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Advanced query tool for bioinformaticians</h2>
-          <p>
-            Work with genomic and phenotypic tabular data using declarative
-            relational query language in a parallel execution engine.
-          </p>
-        </div>
-        <div>
-          <h2>Genomic ordered data architecture</h2>
-          <p>
-            Efficient data structures and commands for genomic analysis
-            use-cases, such as range-queries and table joins.
-          </p>
-        </div>
-        <div>
-          <h2>GORpipe query syntax</h2>
-          <p>
-            Combines the best of SQL and Unix shell pipe syntax, supporting
-            seek-able nested queries, materialized views, and a rich set of
-            commands and functions.
-          </p>
-        </div>
-        <div>
-          <h2>Support for external commands</h2>
-          <p>Define new commands using JVM language or shell scripts.</p>
-        </div>
-        <div>
-          <h2>Compatible with standard formats</h2>
-          <p>BAM, CRAM, VCF, Tabix, TSV, CSV.</p>
-        </div>
-        <div>
-          <h2>Stored procedures</h2>
-          <p>Setup parameterized functions using YML and FreeMarker scripts.</p>
-        </div>
-      </section>
+      <div className={style.Index__wrapper}>
+        <section className={style.Index__bullets}>
+          <div className={style.Index__bullets__item}>
+            <h2>Advanced query tool for bioinformaticians</h2>
+            <p>
+              Work with genomic and phenotypic tabular data using declarative
+              relational query language in a parallel execution engine.
+            </p>
+          </div>
+          <div className={style.Index__bullets__item}>
+            <h2>Genomic ordered data architecture</h2>
+            <p>
+              Efficient data structures and commands for genomic analysis
+              use-cases, such as range-queries and table joins.
+            </p>
+          </div>
+          <div className={style.Index__bullets__item}>
+            <h2>GORpipe query syntax</h2>
+            <p>
+              Combines the best of SQL and Unix shell pipe syntax, supporting
+              seek-able nested queries, materialized views, and a rich set of
+              commands and functions.
+            </p>
+          </div>
+          <div className={style.Index__bullets__item}>
+            <h2>Support for external commands</h2>
+            <p>Define new commands using JVM language or shell scripts.</p>
+          </div>
+          <div className={style.Index__bullets__item}>
+            <h2>Compatible with standard formats</h2>
+            <p>BAM, CRAM, VCF, Tabix, TSV, CSV.</p>
+          </div>
+          <div className={style.Index__bullets__item}>
+            <h2>Stored procedures</h2>
+            <p>
+              Setup parameterized functions using YML and FreeMarker scripts.
+            </p>
+          </div>
+        </section>
+      </div>
 
       <section>
         <h2>Integration with Spark</h2>

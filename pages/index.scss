@@ -144,8 +144,44 @@
     font-size: 20px;
     text-align: center;
 
+    @media (min-width: $tablet) {
+      padding: 100px 0;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 180px 0;
+      font-size: 24px;
+    }
+
+    ul {
+      @media (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     li:not(:last-child) {
       margin-bottom: 30px;
+
+      @media (min-width: $tablet) {
+        margin: 0 4% 0 0;
+      }
+
+      @media (min-width: $desktop) {
+        position: relative;
+        margin: 0;
+        padding-right: 160px;
+
+        &:after {
+          content: "";
+          background: #7d7d7d;
+          height: 112px;
+          width: 1px;
+          position: absolute;
+          right: 80px;
+          top: 54px;
+        }
+      }
     }
 
     a,
@@ -165,44 +201,64 @@
     p {
       max-width: 220px;
       margin: $doubleSpace auto 0;
-    }
 
-    @media (min-width: $tablet) {
-      padding: 100px 0;
-
-      ul {
-        display: flex;
-        justify-content: center;
-      }
-
-      li:not(:last-child) {
-        margin: 0 4% 0 0;
-      }
-
-      p {
+      @media (min-width: $tablet) {
         margin: $quadSpace auto 0;
       }
     }
+  }
+
+  &__bullets {
+    margin: 60px 0;
+
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-column-gap: $doubleSpace;
+      grid-row-gap: $doubleSpace;
+      justify-items: center;
+    }
 
     @media (min-width: $desktop) {
-      padding: 180px 0;
-      font-size: 24px;
+      margin: 270px 0;
+      grid-template-columns: repeat(3, 3fr);
+    }
 
-      li:not(:last-child) {
-        position: relative;
-        margin: 0;
-        padding-right: 160px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: $doubleSpace;
+      text-align: center;
+      transition: box-shadow 0.4s ease-in-out;
+      margin-bottom: $quadSpace;
 
-        &:after {
-          content: "";
-          background: #7d7d7d;
-          height: 112px;
-          width: 1px;
-          position: absolute;
-          right: 80px;
-          top: 54px;
-        }
+      &:hover {
+        box-shadow: -20px 60px 110px rgba(0, 0, 0, 0.15);
       }
+
+      @media (min-width: $tablet) {
+        max-width: 380px;
+        height: 380px;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      @include font-montserrat;
+      font-size: 29px;
+      line-height: 38px;
+      margin-bottom: $doubleSpace;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 68px;
+      }
+    }
+
+    p {
+      color: $textSecondary;
+      font-size: 20px;
+      line-height: 1.7;
     }
   }
 }
