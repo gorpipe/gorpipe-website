@@ -1,26 +1,39 @@
 import matter from "gray-matter";
-import Layout from "../components/Layout";
 import Link from "next/link";
+import DocHead from "../components/DocHead";
+import Layout from "../components/Layout";
 
-const PostLink = props => (
-  <li>
-    <Link href="/blog/[slug]" as={`/blog/${props.slug}`}>
-      <a>{props.slug}</a>
-    </Link>
-  </li>
-);
+import style from "./blog.scss";
 
 const Blog = props => {
   return (
     <Layout>
-      <ul>
-        {props.posts.map(post => (
-          <PostLink key={post.slug} slug={post.slug} />
-        ))}
-      </ul>
+      <DocHead title="Blog - GORpipe" />
+      <div className={style.Blog}>
+        <h1>Blog</h1>
+        <ul>
+          {props.posts.map(post => (
+            <PostLink
+              key={post.slug}
+              slug={post.slug}
+              title={post.data.title}
+            />
+          ))}
+        </ul>
+      </div>
     </Layout>
   );
 };
+
+const PostLink = props => (
+  <li>
+    <h2>
+      <Link href="/blog/[slug]" as={`/blog/${props.slug}`}>
+        <a>{props.title}</a>
+      </Link>
+    </h2>
+  </li>
+);
 
 Blog.getInitialProps = async () => {
   // read all posts from the blogposts folder

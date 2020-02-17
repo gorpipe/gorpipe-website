@@ -2,16 +2,34 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Layout from "../../components/Layout";
 
+import style from "../blog.scss";
+
 const Post = props => {
-  const { title, author } = props.data;
+  const { title, author, date } = props.data;
+
+  const dateObj = new Date(date);
+  const formattedDate = new Intl.DateTimeFormat("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  }).format(dateObj);
 
   return (
     <Layout>
-      <article>
-        <h1>{title}</h1>
-        <p>{author}</p>
-        <ReactMarkdown>{props.content}</ReactMarkdown>
-      </article>
+      <div className={style.Blog}>
+        <article>
+          <h1>{title}</h1>
+          <div className={style.Blog__post__meta}>
+            <p className={style.Blog__post__meta__author}>
+              by <span>{author}</span>
+            </p>
+            <p className={style.Blog__post__meta__date}>{formattedDate}</p>
+          </div>
+          <div className={style.Blog__post}>
+            <ReactMarkdown>{props.content}</ReactMarkdown>
+          </div>
+        </article>
+      </div>
     </Layout>
   );
 };

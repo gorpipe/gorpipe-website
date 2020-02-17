@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@mixin font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
 @mixin grid-wrapper {
   max-width: $maxWidth + $quadSpace;
   margin: 0 auto;
