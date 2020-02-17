@@ -43,7 +43,7 @@ const Index = () => {
         <div className={style.Index__wrapper}>
           <ul>
             <li>
-              <Link href="https://github.com/gorpipe/gorpipe">
+              <Link href="https://github.com/gorpipe/gor">
                 <a>
                   <img
                     src="/jupyter-logo.png"

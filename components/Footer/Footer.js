@@ -51,15 +51,15 @@ const Footer = () => {
               <p>Support</p>
               <ul>
                 <li>
-                  <a href="https://github.com/gorpipe/gorpipe">GitHub</a>
+                  <a href="https://github.com/gorpipe/gor">GitHub</a>
                 </li>
                 <li>
-                  <a href="https://github.com/gorpipe/gorpipe/blob/master/CHANGELOG.md">
+                  <a href="https://github.com/gorpipe/gor/blob/master/CHANGELOG.md">
                     Release Notes
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/gorpipe/gorpipe/issues">
+                  <a href="https://github.com/gorpipe/gor/issues">
                     Issue Tracker
                   </a>
                 </li>
