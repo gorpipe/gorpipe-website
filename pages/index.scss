@@ -2,22 +2,23 @@
 @import "styles/mixins";
 
 .Index {
+  &__wrapper {
+    @include grid-wrapper;
+  }
+
   &__header {
-    background: url("/cover1.jpg") no-repeat top center / cover;
+    background: url("/cover1_mobile.jpg") no-repeat top center / cover;
     @include font-montserrat;
     color: #fff;
     padding: 50px 0 30px;
 
     @media (min-width: $tablet) {
+      background: url("/cover1.jpg") no-repeat top center / cover;
       padding: 70px 0 50px;
     }
 
     @media (min-width: $desktop) {
       padding: 150px 0 120px;
-    }
-
-    &__wrapper {
-      @include grid-wrapper;
     }
 
     h1 {
@@ -131,6 +132,75 @@
         }
         @media (min-width: $tablet) {
           margin-right: $quadSpace;
+        }
+      }
+    }
+  }
+
+  &__quicklinks {
+    @include font-montserrat;
+    background: #f9f9f9;
+    padding: 50px 0;
+    font-size: 20px;
+    text-align: center;
+
+    li:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    a,
+    a:visited {
+      color: $black;
+    }
+
+    a:hover {
+      color: #000;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      max-width: 220px;
+      margin: $doubleSpace auto 0;
+    }
+
+    @media (min-width: $tablet) {
+      padding: 100px 0;
+
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      li:not(:last-child) {
+        margin: 0 4% 0 0;
+      }
+
+      p {
+        margin: $quadSpace auto 0;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      padding: 180px 0;
+      font-size: 24px;
+
+      li:not(:last-child) {
+        position: relative;
+        margin: 0;
+        padding-right: 160px;
+
+        &:after {
+          content: "";
+          background: #7d7d7d;
+          height: 112px;
+          width: 1px;
+          position: absolute;
+          right: 80px;
+          top: 54px;
         }
       }
     }

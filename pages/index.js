@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <Layout>
       <section className={style.Index__header}>
-        <div className={style.Index__header__wrapper}>
+        <div className={style.Index__wrapper}>
           <h1>Open Source Genomic Insights at Scale</h1>
           <p className={style.Index__header__byline}>
             Born at{" "}
@@ -39,24 +39,50 @@ const Index = () => {
         </div>
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <Link href="/download">
-              <a>Download source</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/docs">
-              <a>Setup GORpipe</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/docs">
-              <a>Run GORpipe for desktop application</a>
-            </Link>
-          </li>
-        </ul>
+      <section className={style.Index__quicklinks}>
+        <div className={style.Index__wrapper}>
+          <ul>
+            <li>
+              <Link href="https://github.com/gorpipe/gorpipe">
+                <a>
+                  <img
+                    src="/jupyter-logo.png"
+                    alt="Download GORpipe source code"
+                    height="220"
+                    width="220"
+                  />
+                  <p>Download source</p>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/download">
+                <a>
+                  <img
+                    src="/code.png"
+                    alt="Setup GORpipe command line interface"
+                    height="220"
+                    width="220"
+                  />
+                  <p>Setup GORpipe CLI</p>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/download">
+                <a>
+                  <img
+                    src="/sm.png"
+                    alt="Download GORpipe desktop application, Sequence Miner"
+                    height="220"
+                    width="220"
+                  />
+                  <p>GORpipe desktop application</p>
+                </a>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
