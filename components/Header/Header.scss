@@ -17,6 +17,8 @@
   &__logo {
     display: block;
     width: 96px;
+    height: 44px;
+    margin-top: 2px;
   }
 
   &__menu {
@@ -67,7 +69,7 @@
       &__ghcallout {
         @media (min-width: $tablet) {
           padding: 11px 16px;
-          margin: 3px 12px;
+          margin: 2px 12px;
           background: $blue;
           border-radius: 21px;
           font-weight: bold;

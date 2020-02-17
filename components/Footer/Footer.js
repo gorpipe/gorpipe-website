@@ -6,67 +6,97 @@ import style from "./Footer.scss";
 const Footer = () => {
   return (
     <footer className={style.Footer}>
-      <Link href="/">
-        <a>
-          <GORLogoOutlineText title="GOR" />
-        </a>
-      </Link>
+      <div className={style.Footer__wrapper}>
+        <div className={style.Footer__sup}>
+          <Link href="/">
+            <a>
+              <GORLogoOutlineText title="GOR" />
+            </a>
+          </Link>
 
-      <div>
-        Learn more
-        <ul>
-          <li>
-            <a>Documentation</a>
-          </li>
-          <li>
-            <a>Tutorials</a>
-          </li>
-        </ul>
-      </div>
+          <section className={style.Footer__links}>
+            <div className={style.Footer__links__group}>
+              <p>Learn more</p>
+              <ul>
+                <li>
+                  <Link href="/docs">
+                    <a>Documentation</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/tutorials">
+                    <a>Tutorials</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-      <div>
-        Legal
-        <ul>
-          <li>
-            <a>Terms</a>
-          </li>
-          <li>
-            <a>Privacy</a>
-          </li>
-        </ul>
-      </div>
+            <div className={style.Footer__links__group}>
+              <p>Legal</p>
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a>Terms</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <a>Privacy</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-      <div>
-        Support
-        <ul>
-          <li>
-            <a href="https://github.com/gorpipe/gorpipe">GitHub</a>
-          </li>
-          <li>
-            <a>Release Notes</a>
-          </li>
-          <li>
-            <a>Issue Tracker</a>
-          </li>
-        </ul>
-      </div>
+            <div className={style.Footer__links__group}>
+              <p>Support</p>
+              <ul>
+                <li>
+                  <a href="https://github.com/gorpipe/gorpipe">GitHub</a>
+                </li>
+                <li>
+                  <a href="https://github.com/gorpipe/gorpipe/blob/master/CHANGELOG.md">
+                    Release Notes
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/gorpipe/gorpipe/issues">
+                    Issue Tracker
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-      <div>
-        Company
-        <ul>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Blog</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-          <li>
-            <a>Community</a>
-          </li>
-        </ul>
+            <div className={style.Footer__links__group}>
+              <p>Company</p>
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a>About</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog">
+                    <a>Blog</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <a>Contact</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <a>Community</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <section className={style.Footer__sub}>
+          © {new Date().getFullYear()} WuXi NextCODE
+        </section>
       </div>
     </footer>
   );

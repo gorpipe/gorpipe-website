@@ -1,9 +1,14 @@
 @import "styles/variables";
+@import "styles/mixins";
 
 .Footer {
+  @include font-montserrat;
+  font-size: 14px;
   background: #000;
   flex-shrink: 0;
   margin-top: 100px;
+  padding: 64px 0 32px;
+  color: #fff;
 
   @media (min-width: $tablet) {
     margin-top: 200px;
@@ -11,5 +16,70 @@
 
   @media (min-width: $desktop) {
     margin-top: 350px;
+    padding: 128px 0 64px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &__wrapper {
+    @include grid-wrapper;
+  }
+
+  &__sup {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__links {
+    line-height: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: $doubleSpace;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(4, 4fr);
+      grid-column-gap: $tripleSpace;
+    }
+
+    @media (min-width: $desktop) {
+      grid-template-columns: repeat(4, 4fr);
+      grid-column-gap: 160px;
+    }
+
+    &__group {
+      p {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: $quadSpace 0 $space;
+
+        @media (min-width: $tablet) {
+          margin: 50px 0 $space;
+        }
+
+        @media (min-width: $desktop) {
+          margin: 0 0 $tripleSpace;
+        }
+      }
+    }
+  }
+
+  &__sub {
+    border-top: 1px solid #fff;
+    margin-top: 80px;
+    padding-top: 50px;
+    text-align: right;
+
+    @media (min-width: $tablet) {
+      margin-top: 100px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 160px;
+      padding-top: 100px;
+    }
   }
 }
