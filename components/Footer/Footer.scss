@@ -1,4 +1,15 @@
+@import "styles/variables";
+
 .Footer {
   background: #000;
   flex-shrink: 0;
+  margin-top: 100px;
+
+  @media (min-width: $tablet) {
+    margin-top: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 350px;
+  }
 }

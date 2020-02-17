@@ -126,13 +126,15 @@ const Index = () => {
         </section>
       </div>
 
-      <section>
-        <h2>Integration with Spark</h2>
-        <p>
-          Leverage the Spark execution engine, Scala and Python SDK and the
-          Parque columnar strorage format.
-        </p>
-      </section>
+      <div className={style.Index__wrapper}>
+        <section className={style.Index__spark}>
+          <h2>Integration with Spark</h2>
+          <p>
+            Leverage the Spark execution engine, Scala and Python SDK and the
+            Parque columnar strorage format.
+          </p>
+        </section>
+      </div>
     </Layout>
   );
 };

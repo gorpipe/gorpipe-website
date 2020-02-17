@@ -261,4 +261,51 @@
       line-height: 1.7;
     }
   }
+
+  &__spark {
+    text-align: center;
+
+    h2 {
+      @include font-montserrat;
+      font-size: 32px;
+      line-height: 39px;
+      position: relative;
+      margin-top: 100px;
+
+      @media (min-width: $tablet) {
+        margin-top: 0;
+
+        &:before,
+        &:after {
+          content: "";
+          background: #7d7d7d;
+          width: 20%;
+          height: 1px;
+          position: absolute;
+          left: 20px;
+          top: 50%;
+
+          @media (min-width: $desktop) {
+            width: 25%;
+          }
+        }
+
+        &:after {
+          right: 20px;
+          left: auto;
+        }
+      }
+    }
+
+    p {
+      color: $textSecondary;
+      font-size: 24px;
+      line-height: 40px;
+      margin-top: 20px;
+
+      @media (min-width: $tablet) {
+        margin-top: 56px;
+      }
+    }
+  }
 }
