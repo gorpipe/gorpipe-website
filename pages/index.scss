@@ -233,14 +233,16 @@
       transition: box-shadow 0.4s ease-in-out;
       margin-bottom: $quadSpace;
 
-      &:hover {
-        box-shadow: -20px 60px 110px rgba(0, 0, 0, 0.15);
-      }
-
       @media (min-width: $tablet) {
         max-width: 380px;
         height: 380px;
         margin-bottom: 0;
+      }
+
+      @media (min-width: $desktop) {
+        &:hover {
+          box-shadow: -20px 60px 110px rgba(0, 0, 0, 0.15);
+        }
       }
     }
 
