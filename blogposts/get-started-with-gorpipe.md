@@ -2,7 +2,7 @@
 title: "How to get started with GORpipe"
 author: "Alison McNeil"
 date: "2020-02-04"
-image: /gorpipe.jpg
+image: /blogs/gorcli.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque eget ante non blandit. Sed posuere risus libero, quis elementum nulla lobortis ac. Proin tristique ligula sit amet interdum convallis. Aenean velit est, scelerisque nec cursus sit amet, commodo a risus. Duis sodales euismod lorem, at iaculis neque efficitur nec. Morbi ullamcorper consequat lacus non congue. Phasellus in dictum risus, quis aliquam quam. Integer elementum ac tellus vitae efficitur. Sed aliquet malesuada augue et aliquet.

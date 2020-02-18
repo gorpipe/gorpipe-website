@@ -54,6 +54,15 @@
       }
     }
 
+    &__image {
+      max-width: 100%;
+      margin: $quadSpace 0 60px;
+
+      @media (min-width: $desktop) {
+        margin: $quadSpace 0 120px;
+      }
+    }
+
     h1,
     h2,
     h3,

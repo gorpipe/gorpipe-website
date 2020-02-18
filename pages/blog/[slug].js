@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 import style from "../blog.scss";
 
 const Post = props => {
-  const { title, author, date } = props.data;
+  const { title, author, date, image } = props.data;
 
   const dateObj = new Date(date);
   const formattedDate = new Intl.DateTimeFormat("en-US", {
@@ -26,6 +26,7 @@ const Post = props => {
             <p className={style.Blog__post__meta__date}>{formattedDate}</p>
           </div>
           <div className={style.Blog__post}>
+            <img className={style.Blog__post__image} src={image} />
             <ReactMarkdown>{props.content}</ReactMarkdown>
           </div>
         </article>
