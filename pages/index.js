@@ -46,7 +46,7 @@ const Index = () => {
               <Link href="https://github.com/gorpipe/gor">
                 <a>
                   <img
-                    src="/jupyter-logo.png"
+                    src="/code.png"
                     alt="Download GORpipe source code"
                     height="220"
                     width="220"
@@ -59,7 +59,7 @@ const Index = () => {
               <Link href="/download">
                 <a>
                   <img
-                    src="/code.png"
+                    src="/gor-cli.png"
                     alt="Setup GORpipe command line interface"
                     height="220"
                     width="220"
