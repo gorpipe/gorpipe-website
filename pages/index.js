@@ -29,7 +29,7 @@ const Index = () => {
             </div>
           </div>
           <div className={style.Index__header__callouts}>
-            <Link href="/download">
+            <Link href="/downloads">
               <a className={style.Index__header__callout}>Download</a>
             </Link>
             <Link href="/docs">
@@ -56,7 +56,7 @@ const Index = () => {
               </Link>
             </li>
             <li>
-              <Link href="/download">
+              <Link href="/downloads">
                 <a>
                   <img
                     src="/gor-cli.png"
@@ -69,7 +69,7 @@ const Index = () => {
               </Link>
             </li>
             <li>
-              <Link href="/download">
+              <Link href="/downloads">
                 <a>
                   <img
                     src="/sm.png"

@@ -43,7 +43,6 @@
       }
 
       a,
-      a:visited,
       a:hover {
         color: #fff;
       }
@@ -184,15 +183,6 @@
       }
     }
 
-    a,
-    a:visited {
-      color: $black;
-    }
-
-    a:hover {
-      color: #000;
-    }
-
     img {
       display: block;
       margin: 0 auto;
@@ -214,8 +204,8 @@
     @media (min-width: $tablet) {
       display: grid;
       grid-template-columns: repeat(2, 2fr);
-      grid-column-gap: $doubleSpace;
-      grid-row-gap: $doubleSpace;
+      column-gap: $doubleSpace;
+      row-gap: $doubleSpace;
       justify-items: center;
     }
 

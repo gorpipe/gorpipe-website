@@ -19,7 +19,8 @@
     padding: 128px 0 64px;
   }
 
-  a {
+  a,
+  a:hover {
     color: #fff;
   }
 
@@ -38,16 +39,16 @@
     line-height: 2;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-column-gap: $doubleSpace;
+    column-gap: $doubleSpace;
 
     @media (min-width: $tablet) {
       grid-template-columns: repeat(4, 4fr);
-      grid-column-gap: $tripleSpace;
+      column-gap: $tripleSpace;
     }
 
     @media (min-width: $desktop) {
       grid-template-columns: repeat(4, 4fr);
-      grid-column-gap: 160px;
+      column-gap: 160px;
     }
 
     &__group {

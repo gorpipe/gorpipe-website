@@ -22,7 +22,7 @@ const Header = () => {
         </Link>
         <nav className={style.Header__menu}>
           <ul>
-            <NavLink text="Download" href="/download" />
+            <NavLink text="Downloads" href="/downloads" />
             <NavLink text="Documentation" href="/docs" />
             <NavLink text="Tutorials" href="/tutorials" />
             <NavLink text="Community" href="/community" />

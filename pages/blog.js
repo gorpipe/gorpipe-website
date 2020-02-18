@@ -11,12 +11,13 @@ const Blog = props => {
       <DocHead title="Blog - GORpipe" />
       <div className={style.Blog}>
         <h1>Blog</h1>
-        <ul>
+        <ul className={style.Blog__postlist}>
           {props.posts.map(post => (
             <PostLink
               key={post.slug}
               slug={post.slug}
               title={post.data.title}
+              image={post.data.image}
             />
           ))}
         </ul>
@@ -25,13 +26,14 @@ const Blog = props => {
   );
 };
 
-const PostLink = props => (
-  <li>
-    <h2>
-      <Link href="/blog/[slug]" as={`/blog/${props.slug}`}>
-        <a>{props.title}</a>
-      </Link>
-    </h2>
+const PostLink = ({ slug, title, image }) => (
+  <li className={style.Blog__postlist__item}>
+    <Link href="/blog/[slug]" as={`/blog/${slug}`}>
+      <a>
+        <img src={image} alt={title} />
+        <h2>{title}</h2>
+      </a>
+    </Link>
   </li>
 );
 

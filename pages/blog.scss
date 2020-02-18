@@ -37,8 +37,41 @@
   }
 
   h2 {
-    font-size: 46px;
+    font-size: 28px;
     margin-bottom: 1em;
+
+    @media (min-width: $desktop) {
+      font-size: 46px;
+    }
+  }
+
+  &__postlist {
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      gap: 45px;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 90px;
+    }
+
+    &__item {
+      margin-bottom: 60px;
+
+      > a {
+        display: block;
+      }
+
+      h2 {
+        font-weight: normal;
+      }
+
+      img {
+        max-width: 100%;
+        margin-bottom: $doubleSpace;
+      }
+    }
   }
 
   &__post {

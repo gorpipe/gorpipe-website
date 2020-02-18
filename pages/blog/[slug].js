@@ -26,7 +26,7 @@ const Post = props => {
             <p className={style.Blog__post__meta__date}>{formattedDate}</p>
           </div>
           <div className={style.Blog__post}>
-            <img className={style.Blog__post__image} src={image} />
+            <img className={style.Blog__post__image} src={image} alt={title} />
             <ReactMarkdown>{props.content}</ReactMarkdown>
           </div>
         </article>
