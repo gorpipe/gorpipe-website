@@ -15,6 +15,10 @@
       padding: 50px 0 50px;
     }
 
+    @media (min-height: 1500px) {
+      padding: 150px 0 120px;
+    }
+
     @at-root :global(.bg1) & {
       background: url("/cover1_mobile.jpg") no-repeat top right / cover;
 
@@ -51,6 +55,10 @@
         font-size: 28px;
       }
 
+      @media (min-height: 1500px) {
+        margin-top: $space * 4;
+      }
+
       a,
       a:hover {
         color: #fff;
@@ -68,6 +76,11 @@
       @media (min-width: $desktop) {
         float: right;
         margin: -155px 50px 0 0;
+      }
+
+      @media (min-height: 1500px) {
+        float: none;
+        margin: 0;
       }
     }
 
@@ -105,6 +118,10 @@
         height: 120px;
         width: 120px;
       }
+
+      @media (min-height: 1500px) {
+        margin-top: 50px;
+      }
     }
 
     &__callouts {
@@ -116,8 +133,13 @@
       @media (max-width: $to-tablet) {
         flex-direction: column;
       }
+
       @media (min-width: $tablet) {
         flex-direction: row;
+      }
+
+      @media (min-height: 1500px) {
+        margin-top: 220px;
       }
     }
 
