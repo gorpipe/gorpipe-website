@@ -1,12 +1,20 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
 
 import style from "./index.scss";
 
 const Index = () => {
+  useEffect(() => {
+    // We only want to run random value code on the client.
+    // Else we can get a next.js console log because different values on server and client renders.
+    // Thus run in useEffect, which only runs on the client.
+    document.body.classList.add("bg" + Math.ceil(Math.random() * 2));
+  }, []);
+
   return (
     <Layout>
-      <section className={style.Index__header}>
+      <section id="hero" className={style.Index__header}>
         <div className={style.Index__wrapper}>
           <h1>Open Source Genomic Insights at Scale</h1>
           <p className={style.Index__header__byline}>
@@ -21,12 +29,18 @@ const Index = () => {
             , the global genomics data and insights partner.
           </p>
           <div className={style.Index__header__logos}>
-            <div className={style.Index__header__logo}>
+            <a
+              className={style.Index__header__logo}
+              href="https://www.decode.com/"
+            >
               <img src="/ie-logo.png" title="deCODE genetics corporate logo" />
-            </div>
-            <div className={style.Index__header__logo}>
+            </a>
+            <a
+              className={style.Index__header__logo}
+              href="https://www.wuxinextcode.com"
+            >
               <img src="/ie-logo.png" title="deCODE genetics corporate logo" />
-            </div>
+            </a>
           </div>
           <div className={style.Index__header__callouts}>
             <Link href="/downloads">
@@ -43,17 +57,15 @@ const Index = () => {
         <div className={style.Index__wrapper}>
           <ul>
             <li>
-              <Link href="https://github.com/gorpipe/gor">
-                <a>
-                  <img
-                    src="/code.png"
-                    alt="Download GORpipe source code"
-                    height="220"
-                    width="220"
-                  />
-                  <p>Download source</p>
-                </a>
-              </Link>
+              <a href="https://github.com/gorpipe/gor">
+                <img
+                  src="/code.png"
+                  alt="Download GORpipe source code"
+                  height="220"
+                  width="220"
+                />
+                <p>Download source</p>
+              </a>
             </li>
             <li>
               <Link href="/downloads">

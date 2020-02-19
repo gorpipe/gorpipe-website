@@ -15,7 +15,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 350px;
     padding: 128px 0 64px;
   }
 
@@ -76,11 +75,6 @@
 
     @media (min-width: $tablet) {
       margin-top: 100px;
-    }
-
-    @media (min-width: $desktop) {
-      margin-top: 160px;
-      padding-top: 100px;
     }
   }
 }

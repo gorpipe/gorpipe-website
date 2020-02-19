@@ -7,18 +7,28 @@
   }
 
   &__header {
-    background: url("/cover1_mobile.jpg") no-repeat top center / cover;
     @include font-montserrat;
     color: #fff;
     padding: 50px 0 30px;
 
     @media (min-width: $tablet) {
-      background: url("/cover1.jpg") no-repeat top center / cover;
-      padding: 70px 0 50px;
+      padding: 50px 0 50px;
     }
 
-    @media (min-width: $desktop) {
-      padding: 150px 0 120px;
+    @at-root :global(.bg1) & {
+      background: url("/cover1_mobile.jpg") no-repeat top right / cover;
+
+      @media (min-width: $tablet) {
+        background: url("/cover1.jpg") no-repeat top center / cover;
+      }
+    }
+
+    @at-root :global(.bg2) & {
+      background: url("/cover2_mobile.jpg") no-repeat top center / cover;
+
+      @media (min-width: $tablet) {
+        background: url("/cover2.jpg") no-repeat top center / cover;
+      }
     }
 
     h1 {
@@ -39,7 +49,6 @@
 
       @media (min-width: $tablet) {
         font-size: 28px;
-        margin-top: $space * 7;
       }
 
       a,
@@ -54,6 +63,11 @@
 
       @media (min-width: $tablet) {
         justify-content: left;
+      }
+
+      @media (min-width: $desktop) {
+        float: right;
+        margin: -155px 50px 0 0;
       }
     }
 
@@ -87,25 +101,17 @@
       }
 
       @media (min-width: $desktop) {
-        margin-top: 50px;
+        margin-top: 0;
         height: 120px;
         width: 120px;
       }
     }
 
     &__callouts {
-      margin-top: 80px;
+      margin-top: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      @media (min-width: $tablet) {
-        margin-top: 160px;
-      }
-
-      @media (min-width: $desktop) {
-        margin-top: 220px;
-      }
 
       @media (max-width: $to-tablet) {
         flex-direction: column;
@@ -144,11 +150,10 @@
     text-align: center;
 
     @media (min-width: $tablet) {
-      padding: 100px 0;
+      padding: 100px 0 90px;
     }
 
     @media (min-width: $desktop) {
-      padding: 180px 0;
       font-size: 24px;
     }
 
@@ -210,7 +215,7 @@
     }
 
     @media (min-width: $desktop) {
-      margin: 270px 0;
+      margin: 100px 0;
       grid-template-columns: repeat(3, 3fr);
     }
 
