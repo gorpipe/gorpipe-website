@@ -23,7 +23,12 @@ const Header = () => {
         <nav className={style.Header__menu}>
           <ul>
             <NavLink text="Downloads" href="/downloads" />
-            <NavLink text="Documentation" href="/docs" />
+            <li>
+              {/* This is a static page, should not use next router to link to it */}
+              <a className={style.Header__menu__item} href="/docs/index.html">
+                Documentation
+              </a>
+            </li>
             <NavLink text="Tutorials" href="/tutorials" />
             <NavLink text="Community" href="/community" />
             <NavLink text="Blog" href="/blog" />

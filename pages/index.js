@@ -46,9 +46,10 @@ const Index = () => {
             <Link href="/downloads">
               <a className={style.Index__header__callout}>Download</a>
             </Link>
-            <Link href="/docs">
-              <a className={style.Index__header__callout}>Documentation</a>
-            </Link>
+
+            <a className={style.Index__header__callout} href="/docs/index.html">
+              Documentation
+            </a>
           </div>
         </div>
       </section>
