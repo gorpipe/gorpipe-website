@@ -143,8 +143,8 @@ const Index = () => {
         <section className={style.Index__spark}>
           <h2>Integration with Spark</h2>
           <p>
-            Leverage the Spark execution engine, Scala and Python SDK and the
-            Parque columnar strorage format.
+            Leverage the Spark execution engine, Scala and Python SDK and SQL
+            with the Parque columnar storage format.
           </p>
         </section>
       </div>
