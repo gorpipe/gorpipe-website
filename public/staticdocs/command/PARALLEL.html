@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PARALLEL (Experimental) &mdash; GOR Query Language v.9.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/wxnc.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PARTGOR" href="PARTGOR.html" />
+    <link rel="prev" title="NORSQL" href="NORSQL.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <nav class="wy-master-nav">
+    <div class="wxnc-logo-home">
+        <a href="../index.html">
+            <img src="../_static/logo_wuxi_nextcode.png" class="logo" />
+        </a>
+    </div>
+    <div class="wxnc-company-name">
+        <span>WuXi NextCODE</span>
+    </div>
+    <div class="wxnc-grid-link">
+        <a href="http://docs.wuxinextcode.com">
+            <img src="../_images/grid_dark.png" class="grid" / >
+        </a>
+    </div>
+    <div role="search" class="wxnc-search-form">
+        <button class="wxnc-search-button" form="wxnc-search-form" formmethod="get">
+            <i class="fa fa-search" aria-hidden="true"> </i>
+        </button>
+        <form id="wxnc-search-form" class="wy-form" action="../search.html" method="get">
+            <input class="wxnc-no-right-border" size="30" type="text" name="q" placeholder="Search the user manual..."/>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+</nav>
+
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            
+            
+              <div class="version">
+                <a href="../index.html">
+                  GOR Query Language
+                  <p class="wxnc-subtitle">User manual</p>
+                </a>
+              </div>
+            
+          
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../ref_commands.html">GOR Commands</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ATMAX.html">ATMAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ATMIN.html">ATMIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BAMFLAG.html">BAMFLAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BASES.html">BASES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUG.html">BUG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BUCKETSPLIT.html">BUCKETSPLIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CALC.html">CALC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CALCIFMISSING.html">CALCIFMISSING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CIGARSEGS.html">CIGARSEGS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMD.html">CMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="COLNUM.html">COLNUM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="COLS2LIST.html">COLS2LIST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="COLSPLIT.html">COLSPLIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="COLTYPE.html">COLTYPE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="COLUMNSORT.html">COLUMNSORT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREATE.html">CREATE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CSVCC.html">CSVCC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CSVSEL.html">CSVSEL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DAGMAP.html">DAGMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DEF.html">DEF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DISTINCT.html">DISTINCT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DISTLOC.html">DISTLOC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GAVA.html">GAVA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GOR.html">GOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GORCMD.html">GORCMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GORROWS.html">GORROWS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GORSQL.html">GORSQL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GRANNO.html">GRANNO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GREP.html">GREP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROUP.html">GROUP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GTGEN.html">GTGEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GTLD.html">GTLD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HIDE.html">HIDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="INSET.html">INSET</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JOIN.html">JOIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LDANNO.html">LDANNO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LEFTJOIN.html">LEFTJOIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LEFTWHERE.html">LEFTWHERE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LIFTOVER.html">LIFTOVER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MAP.html">MAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MERGE.html">MERGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MULTIMAP.html">MULTIMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NOR.html">NOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NORCMD.html">NORCMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NORROWS.html">NORROWS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NORSQL.html">NORSQL</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PARALLEL (Experimental)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PARTGOR.html">PARTGOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PEDPIVOT.html">PEDPIVOT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PGOR.html">PGOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PILEUP.html">PILEUP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PIPESTEPS.html">PIPESTEPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PIVOT.html">PIVOT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PREFIX.html">PREFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RANK.html">RANK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="REGRESSION.html">REGRESSION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="REGSEL.html">REGSEL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RENAME.html">RENAME</a></li>
+<li class="toctree-l2"><a class="reference internal" href="REPLACE.html">REPLACE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ROWNUM.html">ROWNUM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SED.html">SED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SEGHIST.html">SEGHIST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SEGPROJ.html">SEGPROJ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SEGSPAN.html">SEGSPAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SELECT.html">SELECT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SEQ.html">SEQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETCOLTYPE.html">SETCOLTYPE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SIGNATURE.html">SIGNATURE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SKIP.html">SKIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SORT.html">SORT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SPLIT.html">SPLIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SQL.html">SQL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TEE.html">TEE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TOGOR.html">TOGOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TOP.html">TOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UNPIVOT.html">UNPIVOT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UNTIL.html">UNTIL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VARIANTS.html">VARIANTS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VARJOIN.html">VARJOIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VARMERGE.html">VARMERGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VARNORM.html">VARNORM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VERIFYCOLTYPE.html">VERIFYCOLTYPE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VERIFYORDER.html">VERIFYORDER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WAIT.html">WAIT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WHERE.html">WHERE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GORROW.html">GORROW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="THROWIF.html">THROWIF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WRITE.html">WRITE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LOG.html">LOG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TRYSELECT.html">TRYSELECT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TRYWHERE.html">TRYWHERE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TRYHIDE.html">TRYHIDE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ref_functions.html">GOR Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basicGORqueries.html">GOR and NOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filteringStreams.html">Filtering Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../columnModifications.html">Column Modifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../groupingAndAggregation.html">Grouping and Aggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nestedStreams.html">Nested Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../joiningTables.html">Joining Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mapMultimap.html">Map and Multimap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pivoting.html">Pivoting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sequenceReads.html">Sequence Reads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variantData.html">Variation Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../materializedViews.html">Materialized Views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parallelGOR.html">Parallelization in GOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GOR Query Language</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ref_commands.html">GOR Commands</a> &raquo;</li>
+        
+      <li>PARALLEL (Experimental)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span style="float:right; padding-top:10px; color:#BABABA;">Used in: gor only</span><div class="section" id="parallel-experimental">
+<span id="parallel"></span><h1>PARALLEL (Experimental)<a class="headerlink" href="#parallel-experimental" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="#parallel"><span class="std std-ref">PARALLEL (Experimental)</span></a> command, like <a class="reference internal" href="PGOR.html#pgor"><span class="std std-ref">PGOR</span></a>, can be used to run queries in parallel.  Unlike the PGOR command which partitions the query execution along the genomic axis, PARALLEL allows for fully customizable parallelism.</p>
+<p>The current implementation, the query expression must be provided like a nested-query expression with the column replacement operator #{col:[column_name]} to inject values from the input parts source into the newly generated gor query as shown in the examples.</p>
+<p>Like PGOR, PARALLEL cannot appear in a regular nested query.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-gor notranslate"><div class="highlight"><pre><span></span><span class="nd">create</span> pnlist = <span class="nd">nor</span> pns.tsv;
+<span class="nd">create</span> #tempfile# = parallel -parts [pnlist]  &lt;(<span class="nd">nor</span> #{col:pn_file} | where pn = &#39;#{col:pn}&#39; );
+<span class="nd">nor</span> [#tempfile#]
+</pre></div>
+</div>
+</div>
+<div class="section" id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-parts</span></code></p></td>
+<td><p>Required option. Input source which contains the split source. Each row in the input parts
+source represents the input for a single split. Columns in the parts input source can be
+referenced with a #{col:[columnname]} operator.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">-limit</span> <span class="pre">[number]</span></code></p></td>
+<td><p>Set a maximum number of parallel tasks. Defaults to 1000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>A full discussion of PARALLEL commands and examples of how to use them can be found in the manual chapter on <a class="reference internal" href="../parallelGOR.html#parallelexamples"><span class="std std-ref">Parallelization in GOR</span></a>.</p>
+<p>See also: <a class="reference internal" href="PGOR.html"><span class="doc">PGOR</span></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PARTGOR.html" class="btn btn-neutral float-right" title="PARTGOR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="NORSQL.html" class="btn btn-neutral float-left" title="NORSQL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 WuXiNextCODE. All rights reserved
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GOR Query Language &mdash; GOR Query Language v.9.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/wxnc.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GOR Commands" href="ref_commands.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <nav class="wy-master-nav">
+    <div class="wxnc-logo-home">
+        <a href="#">
+            <img src="_static/logo_wuxi_nextcode.png" class="logo" />
+        </a>
+    </div>
+    <div class="wxnc-company-name">
+        <span>WuXi NextCODE</span>
+    </div>
+    <div class="wxnc-grid-link">
+        <a href="http://docs.wuxinextcode.com">
+            <img src="_images/grid_dark.png" class="grid" / >
+        </a>
+    </div>
+    <div role="search" class="wxnc-search-form">
+        <button class="wxnc-search-button" form="wxnc-search-form" formmethod="get">
+            <i class="fa fa-search" aria-hidden="true"> </i>
+        </button>
+        <form id="wxnc-search-form" class="wy-form" action="search.html" method="get">
+            <input class="wxnc-no-right-border" size="30" type="text" name="q" placeholder="Search the user manual..."/>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+</nav>
+
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            
+            
+              <div class="version">
+                <a href="#">
+                  GOR Query Language
+                  <p class="wxnc-subtitle">User manual</p>
+                </a>
+              </div>
+            
+          
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="ref_commands.html">GOR Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ref_functions.html">GOR Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basicGORqueries.html">GOR and NOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filteringStreams.html">Filtering Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="columnModifications.html">Column Modifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="groupingAndAggregation.html">Grouping and Aggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nestedStreams.html">Nested Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="joiningTables.html">Joining Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapMultimap.html">Map and Multimap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pivoting.html">Pivoting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sequenceReads.html">Sequence Reads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variantData.html">Variation Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materializedViews.html">Materialized Views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parallelGOR.html">Parallelization in GOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">GOR Query Language</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>GOR Query Language</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gor-query-language">
+<span id="index"></span><h1>GOR Query Language<a class="headerlink" href="#gor-query-language" title="Permalink to this headline">¶</a></h1>
+<p>This manual is a comprehensive guide to the GOR Query Language, which is used to perform powerful data mining with your genomic data. The GOR Query Language is an essential tool that supports all of the various parts of the CSA product suite shown in the diagram below.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/CSA.png"><img alt="_images/CSA.png" src="_images/CSA.png" style="width: 1238.25px; height: 561.0px;" /></a>
+<p class="caption"><span class="caption-text">The GOR Query Language is used in each of the components of CSA</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>This manual is organized in two separate ways. The chapters can be read from end to end as a walkthrough of the GOR Query Language, with plenty of examples of each.  The walkthrough is organized in such a way as to introduce the more basic concepts first. We will then work our way up to the more complicated commands that are possible with GOR queries.</p>
+<p>Alternatively, you can use this manual as a reference. <a class="reference internal" href="ref_commands.html#quickreference"><span class="std std-ref">Each command in GOR has its own page</span></a> with examples and a comprehensive list of functions with a description of their usage can also be found here. This manual assumes that you have some background in using databases and a working knowledge of writing SQL queries is certainly an asset when working in with GOR queries.</p>
+<p>As you will soon learn, the GOR query language is based on a combination of features from relational database query languages like SQL and Unix shell commands. However, it is designed specifically to be used with genomic ordered data.</p>
+<p>This manual covers a range of topics related to the usage of the GOR query language both in the Sequence Miner and on the command line with GorPipe. The <a class="reference internal" href="ref_commands.html#quickreference"><span class="std std-ref">Quick Reference</span></a> contains a comprehensive list of GOR commands with all of the attributes that can be used with each.</p>
+<div class="toctree-wrapper compound">
+</div>
+<a class="reference internal image-reference" href="_images/grid_dark.png"><img alt="_images/grid_dark.png" src="_images/grid_dark.png" style="width: 0.0px; height: 0.0px;" /></a>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ref_commands.html" class="btn btn-neutral float-right" title="GOR Commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 WuXiNextCODE. All rights reserved
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

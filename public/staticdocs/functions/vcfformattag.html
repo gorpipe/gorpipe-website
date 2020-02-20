@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>vcfformattag &mdash; GOR Query Language v.9.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/wxnc.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="gtshare.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="revcompl.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <nav class="wy-master-nav">
+    <div class="wxnc-logo-home">
+        <a href="../index.html">
+            <img src="../_static/logo_wuxi_nextcode.png" class="logo" />
+        </a>
+    </div>
+    <div class="wxnc-company-name">
+        <span>WuXi NextCODE</span>
+    </div>
+    <div class="wxnc-grid-link">
+        <a href="http://docs.wuxinextcode.com">
+            <img src="../_images/grid_dark.png" class="grid" / >
+        </a>
+    </div>
+    <div role="search" class="wxnc-search-form">
+        <button class="wxnc-search-button" form="wxnc-search-form" formmethod="get">
+            <i class="fa fa-search" aria-hidden="true"> </i>
+        </button>
+        <form id="wxnc-search-form" class="wy-form" action="../search.html" method="get">
+            <input class="wxnc-no-right-border" size="30" type="text" name="q" placeholder="Search the user manual..."/>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+</nav>
+
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            
+            
+              <div class="version">
+                <a href="../index.html">
+                  GOR Query Language
+                  <p class="wxnc-subtitle">User manual</p>
+                </a>
+              </div>
+            
+          
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ref_commands.html">GOR Commands</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../ref_functions.html">GOR Functions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#boolean-functions">Boolean Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#type-and-string-conversion">Type and String Conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#algebraic-functions">Algebraic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#trigonometric-functions">Trigonometric Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#statistical-functions">Statistical Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#list-functions">List Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ref_functions.html#genomic-specific-functions">Genomic-Specific Functions</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">vcfformattag</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#genotype-quality-functions">Genotype-quality Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#date-functions">Date Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ref_functions.html#administration-functions">Administration Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basicGORqueries.html">GOR and NOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../filteringStreams.html">Filtering Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../columnModifications.html">Column Modifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../groupingAndAggregation.html">Grouping and Aggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nestedStreams.html">Nested Streams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../joiningTables.html">Joining Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mapMultimap.html">Map and Multimap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pivoting.html">Pivoting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sequenceReads.html">Sequence Reads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../variantData.html">Variation Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../materializedViews.html">Materialized Views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parallelGOR.html">Parallelization in GOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GOR Query Language</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../ref_functions.html">GOR Functions</a> &raquo;</li>
+        
+      <li>vcfformattag</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vcfformattag">
+<span id="id1"></span><h1>vcfformattag<a class="headerlink" href="#vcfformattag" title="Permalink to this headline">¶</a></h1>
+<p>The <strong>vcfformattag</strong> function gets a value from a vcf file.</p>
+<p>The function takes three parameters in string format:</p>
+<ul class="simple">
+<li><p>name of the format column that contains the format of the data column,</p></li>
+<li><p>the name of the data column that contains data for a given PN, the column name is the same as the pn,</p></li>
+<li><p>the tag to get value for.</p></li>
+</ul>
+<p>The function returns the result in string format.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-gor notranslate"><div class="highlight"><pre><span></span>vcfformattag(<span class="k">str</span>,<span class="k">str</span>,<span class="k">str</span>) : <span class="k">str</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>For the following example vcf excerpt:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#CHROM POS    ID        REF   ALT  QUAL  FILTER  INFO                     FORMAT       NA00001         NA00002         NA00003</span>
+<span class="m">20</span>     <span class="m">14370</span>  rs6054257 G     A    <span class="m">29</span>    PASS    <span class="nv">NS</span><span class="o">=</span><span class="m">3</span><span class="p">;</span><span class="nv">DP</span><span class="o">=</span><span class="m">14</span><span class="p">;</span><span class="nv">AF</span><span class="o">=</span><span class="m">0</span>.5<span class="p">;</span>DB<span class="p">;</span>H2  GT:GQ:DP:HQ  <span class="m">0</span><span class="p">|</span><span class="m">0</span>:48:1:51,51  <span class="m">1</span><span class="p">|</span><span class="m">0</span>:48:8:51,51  <span class="m">1</span>/1:43:5:.,.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vcfformat(format,</span> <span class="pre">NA0002,</span> <span class="pre">´HQ´)</span></code> would return 51,51</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vcfformat(format,</span> <span class="pre">NA0003,</span> <span class="pre">´DP´)</span></code> would return 5</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gtshare.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="revcompl.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 WuXiNextCODE. All rights reserved
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

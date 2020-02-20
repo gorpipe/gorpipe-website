@@ -9,7 +9,7 @@ const Layout = props => (
     <DocHead />
     <Header />
     <main className={s.Layout__main}>{props.children}</main>
-    <Footer />
+    {props.hideFooter ? null : <Footer />}
   </div>
 );
 
