@@ -43,11 +43,17 @@ const Index = () => {
             </a>
           </div>
           <div className={style.Index__header__callouts}>
-            <Link href="/downloads">
-              <a className={style.Index__header__callout}>Download</a>
-            </Link>
+            <a
+              className={style.Index__header__callout}
+              href="https://github.com/gorpipe/gor/releases"
+            >
+              Download
+            </a>
 
-            <a className={style.Index__header__callout} href="/docs/index.html">
+            <a
+              className={style.Index__header__callout}
+              href="http://docs.gorpipe.org/"
+            >
               Documentation
             </a>
           </div>
@@ -65,24 +71,22 @@ const Index = () => {
                   height="220"
                   width="220"
                 />
-                <p>Download source</p>
+                <p>Source on GitHub</p>
               </a>
             </li>
             <li>
-              <Link href="/downloads">
-                <a>
-                  <img
-                    src="/gor-cli.png"
-                    alt="Setup GORpipe command line interface"
-                    height="220"
-                    width="220"
-                  />
-                  <p>Setup GORpipe CLI</p>
-                </a>
-              </Link>
+              <a href="https://github.com/gorpipe/gor/releases">
+                <img
+                  src="/gor-cli.png"
+                  alt="Download GORpipe command line interface"
+                  height="220"
+                  width="220"
+                />
+                <p>Get GORpipe</p>
+              </a>
             </li>
             <li>
-              <Link href="/downloads">
+              <Link href="/desktop">
                 <a>
                   <img
                     src="/sm.png"
@@ -90,11 +94,16 @@ const Index = () => {
                     height="220"
                     width="220"
                   />
-                  <p>GORpipe desktop application</p>
+                  <p>Install desktop application</p>
                 </a>
               </Link>
             </li>
           </ul>
+          <p className={style.Index__quicklinks__text}>
+            GORpipe allows analysis of large sets of genomic and phenotypic
+            tabular data using a declarative query language in a parallel
+            execution engine.
+          </p>
         </div>
       </section>
 

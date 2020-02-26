@@ -22,15 +22,16 @@ const Header = () => {
         </Link>
         <nav className={style.Header__menu}>
           <ul>
-            <NavLink text="Downloads" href="/downloads" />
             <li>
               {/* This is a static page, should not use next router to link to it */}
-              <a className={style.Header__menu__item} href="/docs/index.html">
+              <a
+                className={style.Header__menu__item}
+                href="http://docs.gorpipe.org/"
+              >
                 Documentation
               </a>
             </li>
             <NavLink text="Tutorials" href="/tutorials" />
-            <NavLink text="Community" href="/community" />
             <NavLink text="Blog" href="/blog" />
             <GHLink />
           </ul>

@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
 
-const Downloads = () => {
+const Desktop = () => {
   return (
     <Layout>
-      <h2>Downloads</h2>
+      <h2>Desktop</h2>
     </Layout>
   );
 };
 
-export default Downloads;
+export default Desktop;
