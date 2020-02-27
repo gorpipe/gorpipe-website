@@ -35,6 +35,22 @@
       }
     }
 
+    @at-root :global(.bg3) & {
+      background: url("/cover3_mobile.jpg") no-repeat top center / cover;
+
+      @media (min-width: $tablet) {
+        background: url("/cover3.jpg") no-repeat bottom center / cover;
+      }
+    }
+
+    @at-root :global(.bg4) & {
+      background: url("/cover4_mobile.jpg") no-repeat top center / cover;
+
+      @media (min-width: $tablet) {
+        background: url("/cover4.jpg") no-repeat 50% 62% / cover;
+      }
+    }
+
     h1 {
       font-size: 32px;
       font-weight: 500;

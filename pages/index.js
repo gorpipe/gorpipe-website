@@ -9,7 +9,7 @@ const Index = () => {
     // We only want to run random value code on the client.
     // Else we can get a next.js console log because different values on server and client renders.
     // Thus run in useEffect, which only runs on the client.
-    document.body.classList.add("bg" + Math.ceil(Math.random() * 2));
+    document.body.classList.add("bg" + Math.ceil(Math.random() * 4));
   }, []);
 
   return (
