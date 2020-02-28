@@ -23,7 +23,9 @@ const config = {
     // when a new page is created, it must be added here
     const routes = {
       "/": { page: "/" },
-      "/blog": { page: "/blog" }
+      "/blog": { page: "/blog" },
+      "/desktop": { page: "/desktop" },
+      "/tutorials": { page: "/tutorials" }
     };
 
     // below is the dynamic mapping of all blog posts in the blogposts directory
@@ -43,6 +45,26 @@ const config = {
     // Add blogs to the routes map
     blogSlugs.forEach(blog => {
       routes[`/blog/${blog}`] = { page: "/blog/[slug]", query: { slug: blog } };
+    });
+
+    // get tutorial files
+    const tutorials = glob.sync("public/tutorialfiles/*.html");
+
+    // remove path and extension to leave filename only
+    const tutorialSlugs = tutorials.map(file =>
+      file
+        .split("/")[2]
+        .replace(/ /g, "-")
+        .slice(0, -5)
+        .trim()
+    );
+
+    // Add tutorials to the routes map
+    tutorialSlugs.forEach(tutorial => {
+      routes[`/tutorials/${tutorial}`] = {
+        page: "/tutorials/[slug]",
+        query: { slug: tutorial }
+      };
     });
 
     return routes;

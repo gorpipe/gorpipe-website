@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import Layout from "../../components/Layout";
 
-import style from "./tutorial.scss";
+import style from "../tutorials.scss";
 
-const Tutorial = () => {
+const Tutorial = ({ slug }) => {
   const [height, setHeight] = useState("100vh");
-  const slug = useRouter().query.slug;
 
   useEffect(() => {
     const frame = document.getElementById("tutframe");
@@ -26,12 +24,17 @@ const Tutorial = () => {
       <div className={style.Tutorial}>
         <iframe
           id="tutframe"
-          src={`/tutorials/${slug}.html`}
+          src={`/tutorialfiles/${slug}.html`}
           style={{ height: height }}
         />
       </div>
     </Layout>
   );
+};
+
+Tutorial.getInitialProps = async ctx => {
+  const { slug } = ctx.query;
+  return { slug };
 };
 
 export default Tutorial;

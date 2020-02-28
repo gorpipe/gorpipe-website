@@ -12,12 +12,12 @@ const Tutorials = () => {
         <h2>Tutorials</h2>
         <ul>
           <li>
-            <Link href="/tutorial/gor-and-nor">
+            <Link href="/tutorials/gor-and-nor">
               <a>GOR and NOR</a>
             </Link>
           </li>
           <li>
-            <Link href="/tutorial/phenotypes">
+            <Link href="/tutorials/phenotypes">
               <a>Phenotypes</a>
             </Link>
           </li>
