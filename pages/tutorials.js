@@ -12,14 +12,10 @@ const Tutorials = () => {
         <h2>Tutorials</h2>
         <ul>
           <li>
-            <Link href="/tutorials/gor-and-nor">
-              <a>GOR and NOR</a>
-            </Link>
+            <a href="/tutorials/gor-and-nor">GOR and NOR</a>
           </li>
           <li>
-            <Link href="/tutorials/phenotypes">
-              <a>Phenotypes</a>
-            </Link>
+            <a href="/tutorials/phenotypes">Phenotypes</a>
           </li>
         </ul>
       </div>
