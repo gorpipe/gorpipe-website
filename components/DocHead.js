@@ -3,7 +3,7 @@ import Head from "next/head";
 const defaults = {
   title: "GORpipe",
   description: "Genomic Insights at Scale",
-  shareImg: "https://gorpipe.org/gor-pipe-share-img.png"
+  shareImg: "/gor-pipe-share-img.png"
 };
 
 const DocHead = props => {
