@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font: 16px/1.25 "Roboto", sans-serif;
+  font: 16px/1.5 "Roboto", sans-serif;
   text-size-adjust: 100%; // iOS on orientation change
   color: $black;
 }
@@ -52,4 +52,12 @@ a {
 
 a:hover {
   color: #000;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.9em;
+  padding: 0 4px;
+  background: #fdfdfd;
+  border: 1px solid #cecece;
 }

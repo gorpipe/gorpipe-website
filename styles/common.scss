@@ -1,0 +1,141 @@
+@import "./mixins.scss";
+
+.card {
+  margin-bottom: 60px;
+
+  @media (min-width: $desktop) {
+    @include grid-wrapper;
+    display: flex;
+    margin: 150px auto;
+  }
+
+  &__image {
+    height: 100px;
+    width: 100%;
+    object-fit: none;
+    margin-bottom: $tripleSpace;
+
+    @media (min-width: $tablet) {
+      height: 300px;
+      object-fit: cover;
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      height: 696px;
+      width: 558px;
+      margin: 0 112px 0 0;
+      box-shadow: 48px -48px 0px 5px #f1f3f5;
+    }
+  }
+
+  &__text {
+    @include grid-wrapper;
+
+    h1 {
+      @include font-montserrat;
+      font-weight: bold;
+      font-size: 32px;
+      margin-bottom: 2em;
+      position: relative;
+
+      @media (min-width: $tablet) {
+        font-size: 61px;
+      }
+
+      &:after {
+        content: "";
+        background: $blue;
+        height: 4px;
+        width: 128px;
+        border-radius: 100px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+
+        @media (min-width: $desktop) {
+          bottom: -40px;
+        }
+      }
+    }
+
+    &__details {
+      @include font-montserrat;
+      color: $textSecondary;
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    @include grid-wrapper;
+    margin-top: 120px;
+
+    @media (min-width: $desktop) {
+      display: flex;
+    }
+
+    li {
+      margin-bottom: 50px;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 70px;
+      }
+
+      @media (min-width: $desktop) {
+        flex: 1;
+
+        &:not(:first-child) {
+          margin-left: 150px;
+        }
+      }
+    }
+
+    h2 {
+      @include font-montserrat;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 0.5em;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 1em;
+        font-size: 26px;
+      }
+    }
+
+    p {
+      @include font-montserrat;
+      color: $textSecondary;
+    }
+
+    &__link {
+      @include font-montserrat;
+      display: block;
+      font-weight: bold;
+      margin-top: $tripleSpace;
+      background: url("/arrow_blue.svg") no-repeat;
+      padding: 0 0 0 40px;
+      line-height: 16px;
+
+      @media (min-width: $desktop) {
+        margin-top: 100px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__callout_link {
+    @include font-montserrat;
+    background: $blue url("/arrow_white.svg") no-repeat right 32px top 50%;
+    color: #fff;
+    font-weight: bold;
+    line-height: 88px;
+    display: block;
+    padding: 0 $quadSpace;
+    margin: 50px 0;
+
+    @media (min-width: $tablet) {
+      width: 370px;
+      margin: 100px 0 0;
+    }
+  }
+}
