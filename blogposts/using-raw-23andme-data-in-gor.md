@@ -5,13 +5,11 @@ date: "2020-03-03"
 image: /blogs/gorcli.png
 ---
 
-Pulling teeth can I just chime in on that one, but highlights we need to button up our approach back of the net. I'll book a meeting so we can solution this before the sprint is over productize tbrand terrorists Bob called an all-hands this afternoon, clear blue water for run it up the flag pole. A set of certitudes based on deductions founded on false premise strategic fit, but tribal knowledge. Screw the pooch obviously downselect nor build on a culture of contribution and inclusion. Driving the initiative forward they have downloaded gmail and seems to be working for now so nobody's fault it could have been managed better for optimize for search that is a good problem to have. Message the initiative we need to future-proof this deliverables, window of opportunity yet product management breakout fastworks this is our north star design.
-
-# 1 - Download raw data from 23andme.com
+## 1 - Download raw data from 23andme.com
 
 There is a download link in the top right corner of the "Browse raw data" page.
 
-# 2 - Clone arrogantrobot/23andme2vcf repo
+## 2 - Clone arrogantrobot/23andme2vcf repo
 
 This github repo has a tool that converts the raw data from 23andme to vcf, you can clone this repo using the following git command on your terminal:
 
@@ -20,7 +18,7 @@ git clone git://github.com/arrogantrobot/23andme2vcf.git
 cd 23andme2vcf
 ```
 
-# 3 - Run .txt to .vcf conversion
+## 3 - Run .txt to .vcf conversion
 
 The following command starts the conversion tool using the latest available reference package:
 
@@ -30,7 +28,7 @@ perl 23andme2vcf.pl /path/to/23andme_raw.txt /path/to/output.vcf 4
 
 There might be a message about parts of the file not matching the reference but downgrading to version 3 is not likely to yield better results.
 
-# 4 - Convert .vcf to .gor
+## 4 - Convert .vcf to .gor
 
 Now we need to convert the .vcf file to our .gor format:
 
@@ -47,7 +45,7 @@ cd gor
 cd server/build/install/gor-scripts/bin
 ```
 
-# 5 - Query the data in Sequence Miner
+## 5 - Query the data in Sequence Miner
 
 You can do this by connecting to either dev or test, the file we want to browse is stored locally so it doesn't matter what project you choose.
 
@@ -122,7 +120,7 @@ replace TEXT listfilter(TEXT,'len(x)>0')) | columnsort
 1,2,Reference,Call,DIAG_,GT*,Gene*,VEP\* | top 10000
 ```
 
-# 6 - Try to make sense of the results
+## 6 - Try to make sense of the results
 
 This is the difficult part, you will likely have gotten a ton of variants returned but reading the results is a bit tricky. Here are a few tips but please note that this is barely scratching the surface of how this data should be interpreted.
 
@@ -136,7 +134,7 @@ This is the difficult part, you will likely have gotten a ton of variants return
    1. Select 'HIGH' and then hit 'Apply'
 1. Scroll all the way to the right to the OMIM_IDs column, these can be looked up here.
 
-# Appendix
+## Appendix
 
 The data from 23andme isn't always very useful (or reliable), for example you might end up with their internal Id's in the ID column instead of the standard rsID value:
 
