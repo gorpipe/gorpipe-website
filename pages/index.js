@@ -52,7 +52,7 @@ const Index = () => {
 
             <a
               className={style.Index__header__callout}
-              href="http://docs.gorpipe.org/"
+              href="https://docs.gorpipe.org/"
             >
               Documentation
             </a>

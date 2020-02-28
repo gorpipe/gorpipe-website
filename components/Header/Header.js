@@ -26,7 +26,7 @@ const Header = () => {
               {/* This is a static page, should not use next router to link to it */}
               <a
                 className={style.Header__menu__item}
-                href="http://docs.gorpipe.org/"
+                href="https://docs.gorpipe.org/"
               >
                 Documentation
               </a>
