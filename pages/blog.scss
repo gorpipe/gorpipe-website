@@ -75,6 +75,17 @@
   }
 
   &__post {
+    font-size: 18px;
+    line-height: 1.7;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 28px;
+    }
+
     &__meta {
       color: $textSecondary;
       font-size: 14px;
@@ -105,17 +116,54 @@
       }
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.7;
+    a:link {
+      color: $blue;
+    }
+
+    a:hover {
+      color: $black;
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote {
       margin-bottom: 1em;
+    }
+
+    ul,
+    ol {
+      margin-left: 2em;
+
+      li {
+        padding-left: 1em;
+      }
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    pre {
+      font: 14px/1.5 monospace;
+      padding: $doubleSpace $tripleSpace;
+      background: #fdfdfd;
+      border: 1px solid #cecece;
+      margin-bottom: 18px;
 
       @media (min-width: $tablet) {
-        font-size: 20px;
+        margin-bottom: 20px;
       }
 
       @media (min-width: $desktop) {
-        font-size: 28px;
+        margin-bottom: 28px;
+      }
+
+      code {
+        font: inherit;
+        padding: 0;
+        background: transparent;
+        border: none;
       }
     }
   }
