@@ -57,28 +57,32 @@
       }
 
       @media (min-width: $tablet) {
-        padding: 15px $space;
+        padding: 14px $space 13px;
         font-size: 14px;
       }
 
       @media (min-width: 850px) {
-        padding: 14px $space;
+        padding: 12px $space;
         font-size: 16px;
       }
 
       @media (min-width: $desktop) {
-        padding: 14px $tripleSpace;
+        padding: 12px $tripleSpace;
       }
 
       &__ghcallout {
         @media (min-width: $tablet) {
-          padding: 11px 16px;
-          margin: 2px 12px;
-          background: $blue;
-          border-radius: 21px;
-          font-weight: bold;
+          padding: 0;
+        }
 
-          a {
+        a {
+          @media (min-width: $tablet) {
+            padding: 11px 16px;
+            margin: 0 12px;
+            background: $blue;
+            border-radius: 21px;
+            font-weight: bold;
+            display: block;
             color: #fff;
           }
         }
