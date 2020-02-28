@@ -62,9 +62,7 @@ const GHLink = () => (
       style.Header__menu__item__ghcallout
     )}
   >
-    <a href="https://github.com/gorpipe/gor" target="_blank">
-      GitHub
-    </a>
+    <a href="https://github.com/gorpipe/gor">GitHub</a>
   </li>
 );
 
