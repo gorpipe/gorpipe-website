@@ -150,6 +150,7 @@
       background: #fdfdfd;
       border: 1px solid #cecece;
       margin-bottom: 18px;
+      overflow: auto;
 
       @media (min-width: $tablet) {
         margin-bottom: 20px;
