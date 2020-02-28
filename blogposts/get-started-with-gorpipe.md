@@ -1,5 +1,6 @@
 ---
 title: "How to get started with GORpipe"
+description: "Get started with GORpipe in minutes"
 author: "Alison McNeil"
 date: "2020-02-04"
 image: /blogs/gorcli.png

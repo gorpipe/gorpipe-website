@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import DocHead from "../components/DocHead";
 
 import common from "styles/common.scss";
 
@@ -24,6 +25,7 @@ const Desktop = () => {
 
   return (
     <Layout>
+      <DocHead title="GORpipe desktop client - GORpipe" />
       <div className={common.card}>
         <img
           src="/SM_screenshot.jpg"

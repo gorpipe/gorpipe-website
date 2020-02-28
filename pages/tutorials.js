@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
+import DocHead from "../components/DocHead";
 
 import style from "./tutorials.scss";
 
 const Tutorials = () => {
   return (
     <Layout>
+      <DocHead title="Tutorials - GORpipe" />
       <div className={style.Tutorials}>
         <h2>Tutorials</h2>
         <ul>

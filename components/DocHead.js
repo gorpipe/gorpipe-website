@@ -7,7 +7,7 @@ const defaults = {
 };
 
 const DocHead = props => {
-  const options = { ...props, ...defaults };
+  const options = { ...defaults, ...props };
 
   return (
     <Head>

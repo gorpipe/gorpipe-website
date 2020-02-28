@@ -1,5 +1,6 @@
 ---
 title: "Using raw 23andme data in GOR"
+description: "Digging through raw 23andme data in GOR is surprisingly easy"
 author: "Alison MacNeil"
 date: "2020-03-03"
 image: /blogs/gorcli.png

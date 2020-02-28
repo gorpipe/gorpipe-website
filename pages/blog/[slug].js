@@ -1,11 +1,12 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Layout from "../../components/Layout";
+import DocHead from "../../components/DocHead";
 
 import style from "../blog.scss";
 
 const Post = props => {
-  const { title, author, date, image } = props.data;
+  const { title, author, date, image, description } = props.data;
 
   const dateObj = new Date(date);
   const formattedDate = new Intl.DateTimeFormat("en-US", {
@@ -16,6 +17,7 @@ const Post = props => {
 
   return (
     <Layout>
+      <DocHead title={title} description={description} shareImg={image} />
       <div className={style.Blog}>
         <article>
           <h1>{title}</h1>
