@@ -32,6 +32,14 @@ const Header = () => {
               </a>
             </li>
             <NavLink text="Tutorials" href="/tutorials" />
+            <li>
+              <a
+                className={style.Header__menu__item}
+                href="https://forums.gorpipe.org"
+              >
+                Community
+              </a>
+            </li>
             <NavLink text="Blog" href="/blog" />
             <GHLink />
           </ul>

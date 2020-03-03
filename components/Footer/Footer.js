@@ -60,14 +60,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
-                    <a>Contact</a>
-                  </Link>
+                  <a href="https://gorpipe.slack.com">Contact</a>
                 </li>
                 <li>
-                  <Link href="/">
-                    <a>Community</a>
-                  </Link>
+                  <a href="https://forums.gorpipe.org">Community</a>
                 </li>
               </ul>
             </div>
