@@ -30,22 +30,6 @@ const Footer = () => {
             </div>
 
             <div className={style.Footer__links__group}>
-              <p>Legal</p>
-              <ul>
-                <li>
-                  <Link href="/">
-                    <a>Terms</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <a>Privacy</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className={style.Footer__links__group}>
               <p>Support</p>
               <ul>
                 <li>
