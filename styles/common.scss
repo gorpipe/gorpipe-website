@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @import "./mixins.scss";
 
 .card {
@@ -121,6 +122,10 @@
         margin-left: -32px;
         font-size: 18px;
       }
+
+      &:hover {
+        color: $blue;
+      }
     }
   }
 
@@ -137,6 +142,10 @@
     @media (min-width: $tablet) {
       width: 370px;
       margin: 100px 0 0;
+    }
+
+    &:hover {
+      color: #fff;
     }
   }
 }

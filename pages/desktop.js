@@ -7,7 +7,8 @@ const Desktop = () => {
   const [platformUrl, setPlatformUrl] = React.useState("");
 
   const winDLUrl = "/win";
-  const macDLUrl = "/mac";
+  const macDLUrl =
+    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/SequenceMiner-1.0.dmg";
   const linuxDLUrl = "/linux";
 
   React.useEffect(() => {
