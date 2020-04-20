@@ -8,7 +8,7 @@ const Desktop = () => {
 
   const winDLUrl = "/win";
   const macDLUrl =
-    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/SequenceMiner-1.0.dmg";
+    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/SequenceMiner-1.0.pkg";
   const linuxDLUrl = "/linux";
 
   React.useEffect(() => {
