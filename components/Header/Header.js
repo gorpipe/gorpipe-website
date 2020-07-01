@@ -31,7 +31,6 @@ const Header = () => {
                 Documentation
               </a>
             </li>
-            <NavLink text="Tutorials" href="/tutorials" />
             <li>
               <a
                 className={style.Header__menu__item}

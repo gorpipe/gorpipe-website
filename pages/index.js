@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import GSLogo from "assets/GSLogo.svg";
 
 import style from "./index.scss";
 
@@ -23,8 +24,8 @@ const Index = () => {
               <strong>deCODE genetics</strong>
             </a>
             , the pioneers for population scale genomic research. Raised by{" "}
-            <a href="https://www.wuxinextcode.com">
-              <strong>WuXi NextCODE</strong>
+            <a href="https://www.genuitysci.com">
+              <strong>Genuity Science</strong>
             </a>
             , the global genomics data and insights partner.
           </p>
@@ -37,9 +38,9 @@ const Index = () => {
             </a>
             <a
               className={style.Index__header__logo}
-              href="https://www.wuxinextcode.com"
+              href="https://www.genuitysci.com"
             >
-              <img src="/ie-logo.png" title="deCODE genetics corporate logo" />
+              <GSLogo title="Genuity Science corporate logo" />
             </a>
           </div>
           <div className={style.Index__header__callouts}>

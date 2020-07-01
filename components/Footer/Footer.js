@@ -21,11 +21,6 @@ const Footer = () => {
                 <li>
                   <a href="https://docs.gorpipe.org/">Documentation</a>
                 </li>
-                <li>
-                  <Link href="/tutorials">
-                    <a>Tutorials</a>
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -51,7 +46,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link href="/">
-                    <a>About</a>
+                    <a href="https://genuitysci.com/our-technology">About</a>
                   </Link>
                 </li>
                 <li>
@@ -71,7 +66,7 @@ const Footer = () => {
         </div>
 
         <section className={style.Footer__sub}>
-          © {new Date().getFullYear()} WuXi NextCODE
+          © {new Date().getFullYear()} Genuity Science
         </section>
       </div>
     </footer>
