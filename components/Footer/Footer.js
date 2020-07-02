@@ -45,9 +45,7 @@ const Footer = () => {
               <p>Company</p>
               <ul>
                 <li>
-                  <Link href="/">
-                    <a href="https://genuitysci.com/our-technology">About</a>
-                  </Link>
+                  <a href="https://genuitysci.com/our-technology">About</a>
                 </li>
                 <li>
                   <Link href="/blog">
