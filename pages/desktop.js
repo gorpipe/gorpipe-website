@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import DocHead from "../components/DocHead";
 
-import common from "styles/common.scss";
+import common from "styles/common.module.scss";
 
 const Desktop = () => {
   const [platformUrl, setPlatformUrl] = React.useState("");

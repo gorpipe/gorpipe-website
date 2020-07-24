@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import DocHead from "../components/DocHead";
 
-import style from "./tutorials.scss";
+import style from "./tutorials.module.scss";
 
 const Tutorials = () => {
   return (

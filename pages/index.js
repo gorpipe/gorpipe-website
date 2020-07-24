@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import GSLogo from "assets/GSLogo.svg";
 
-import style from "./index.scss";
+import style from "./index.module.scss";
 
 const Index = () => {
   useEffect(() => {

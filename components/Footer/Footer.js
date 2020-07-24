@@ -1,7 +1,7 @@
 import Link from "next/link";
 import GORLogoOutlineText from "assets/GORLogoOutlineText.svg";
 
-import style from "./Footer.scss";
+import style from "./Footer.module.scss";
 
 const Footer = () => {
   return (

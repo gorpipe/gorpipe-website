@@ -2,9 +2,9 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import DocHead from "./DocHead";
 
-import s from "./Layout.scss";
+import s from "./Layout.module.scss";
 
-const Layout = props => (
+const Layout = (props) => (
   <div className={s.Layout}>
     <DocHead />
     <Header />

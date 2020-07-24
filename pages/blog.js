@@ -3,16 +3,16 @@ import Link from "next/link";
 import DocHead from "../components/DocHead";
 import Layout from "../components/Layout";
 
-import style from "./blog.scss";
+import style from "./blog.module.scss";
 
-const Blog = props => {
+const Blog = (props) => {
   return (
     <Layout>
       <DocHead title="Blog - GORpipe" />
       <div className={style.Blog}>
         <h1>Blog</h1>
         <ul className={style.Blog__postlist}>
-          {props.posts.map(post => (
+          {props.posts.map((post) => (
             <PostLink
               key={post.slug}
               slug={post.slug}
@@ -39,7 +39,7 @@ const PostLink = ({ slug, title, image }) => (
 
 Blog.getInitialProps = async () => {
   // read all posts from the blogposts folder
-  const posts = (context => {
+  const posts = ((context) => {
     const keys = context.keys();
     const values = keys.map(context);
 
@@ -57,7 +57,7 @@ Blog.getInitialProps = async () => {
 
       return {
         ...file,
-        slug
+        slug,
       };
     });
 
@@ -65,7 +65,7 @@ Blog.getInitialProps = async () => {
   })(require.context("../blogposts", true, /\.md$/));
 
   return {
-    posts
+    posts,
   };
 };
 

@@ -3,13 +3,13 @@ import cx from "classnames";
 import Link from "next/link";
 import GORLogoText from "assets/GORLogoText.svg";
 
-import style from "./Header.scss";
+import style from "./Header.module.scss";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const headerClasses = cx(style.Header, {
-    [style.Header_open]: isMenuOpen
+    [style.Header_open]: isMenuOpen,
   });
 
   return (
