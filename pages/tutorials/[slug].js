@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Layout from "../../components/Layout";
 
-import style from "../tutorials.scss";
+import style from "../tutorials.module.scss";
 
 const Tutorial = ({ slug }) => {
   const [height, setHeight] = useState("100vh");
@@ -32,7 +32,7 @@ const Tutorial = ({ slug }) => {
   );
 };
 
-Tutorial.getInitialProps = async ctx => {
+Tutorial.getInitialProps = async (ctx) => {
   const { slug } = ctx.query;
   return { slug };
 };

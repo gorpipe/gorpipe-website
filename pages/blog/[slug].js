@@ -3,16 +3,16 @@ import ReactMarkdown from "react-markdown";
 import Layout from "../../components/Layout";
 import DocHead from "../../components/DocHead";
 
-import style from "../blog.scss";
+import style from "../blog.module.scss";
 
-const Post = props => {
+const Post = (props) => {
   const { title, author, date, image, description } = props.data;
 
   const dateObj = new Date(date);
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     day: "numeric",
     month: "long",
-    year: "numeric"
+    year: "numeric",
   }).format(dateObj);
 
   return (
@@ -39,7 +39,7 @@ const Post = props => {
   );
 };
 
-Post.getInitialProps = async ctx => {
+Post.getInitialProps = async (ctx) => {
   const { slug } = ctx.query;
   const content = await import(`../../blogposts/${slug}.md`);
   const file = matter(content.default);
