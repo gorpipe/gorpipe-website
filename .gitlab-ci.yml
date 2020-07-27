@@ -2,12 +2,13 @@ update_pages_branch:
   stage: deploy
   script: 
     - git checkout gl-pages
-    - git merge master --allow-unrelated-histories --no-edit
+    - git merge master --no-edit
   only:
     - master
 
 pages:
   stage: deploy
+  image: node:14.5
   script:
     - npm run build
     - mv out public
