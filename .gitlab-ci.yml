@@ -1,11 +1,3 @@
-update_pages_branch:
-  stage: deploy
-  script: 
-    - git checkout gl-pages
-    - git merge master --no-edit
-  only:
-    - master
-
 pages:
   stage: deploy
   image: node:14.5
@@ -16,4 +8,4 @@ pages:
     paths:
       - public
   only:
-    - gl-pages
+    - master
