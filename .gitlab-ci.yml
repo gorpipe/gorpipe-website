@@ -4,6 +4,7 @@ pages:
   script:
     - npm ci
     - npm run export
+    - rm -rf public
     - mv out public
   artifacts:
     paths:

@@ -6,6 +6,9 @@ const plugins = require("next-compose-plugins");
 const config = {
   poweredByHeader: false,
 
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "/cla/gorpipe-website" : "",
+
   webpack: function (config) {
     config.module.rules.push({
       test: /\.md$/,
