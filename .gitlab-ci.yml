@@ -1,0 +1,18 @@
+update_pages_branch:
+  stage: deploy
+  script: 
+    - git checkout gl-pages
+    - git merge master --allow-unrelated-histories --no-edit
+  only:
+    - master
+
+pages:
+  stage: deploy
+  script:
+    - npm run build
+    - mv out public
+  artifacts:
+    paths:
+      - public
+  only:
+    - gl-pages
