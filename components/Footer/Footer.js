@@ -52,12 +52,6 @@ const Footer = () => {
                     <a>Blog</a>
                   </Link>
                 </li>
-                <li>
-                  <a href="https://gorpipe.slack.com">Contact</a>
-                </li>
-                <li>
-                  <a href="https://forums.gorpipe.org">Community</a>
-                </li>
               </ul>
             </div>
           </section>

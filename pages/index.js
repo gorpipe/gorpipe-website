@@ -46,7 +46,7 @@ const Index = () => {
           <div className={style.Index__header__callouts}>
             <a
               className={style.Index__header__callout}
-              href="https://github.com/gorpipe/gor/releases"
+              href="https://github.com/gorpipe/gor#prerequisites"
             >
               Download
             </a>
