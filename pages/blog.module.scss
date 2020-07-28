@@ -3,9 +3,9 @@
 
 .Blog {
   @include grid-wrapper;
-  @include font-playfair;
 
   h1 {
+    @include font-playfair;
     font-size: 33px;
     line-height: 54px;
     margin: 50px 0 70px;
@@ -37,11 +37,12 @@
   }
 
   h2 {
-    font-size: 28px;
-    margin-bottom: 1em;
+    @include font-playfair;
+    font-size: 24px;
+    margin-bottom: 0.5em;
 
     @media (min-width: $desktop) {
-      font-size: 46px;
+      font-size: 30px;
     }
   }
 
@@ -82,11 +83,8 @@
       font-size: 20px;
     }
 
-    @media (min-width: $desktop) {
-      font-size: 28px;
-    }
-
     &__meta {
+      @include font-playfair;
       color: $textSecondary;
       font-size: 14px;
       margin-bottom: $quadSpace;
@@ -128,7 +126,7 @@
     ul,
     ol,
     blockquote {
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
 
     ul,
