@@ -70,10 +70,7 @@ const Desktop = () => {
           </li>
           <li>
             <h2>macOS</h2>
-            <p>
-              Sequence Miner is available for macOS 64 bit as a{" "}
-              <code>.dmg</code>.
-            </p>
+            <p>Sequence Miner is available for macOS 64 bit.</p>
             <a
               className={common.card__list__link}
               href={macDLUrl}
