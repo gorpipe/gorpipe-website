@@ -6,10 +6,14 @@ import common from "styles/common.module.scss";
 const Desktop = () => {
   const [platformUrl, setPlatformUrl] = React.useState("");
 
-  const winDLUrl = "/win";
+  const winDLUrl =
+    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/install/SequenceMiner-11.0.0.msi";
   const macDLUrl =
-    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/SequenceMiner-1.0.pkg";
-  const linuxDLUrl = "/linux";
+    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/install/SequenceMiner-11.0.0.pkg";
+  const debDLUrl =
+    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/install/sequenceminer_11.0.0-1_amd64.deb";
+  const rpmDLUrl =
+    "https://wuxinextcode-sm-public.s3.us-east-1.amazonaws.com/install/sequenceminer-11.0.0-1.x86_64.rpm";
 
   React.useEffect(() => {
     const platform = window.navigator.platform || "";
@@ -73,7 +77,7 @@ const Desktop = () => {
             <a
               className={common.card__list__link}
               href={macDLUrl}
-              title="Download Sequence Miner for Windows"
+              title="Download Sequence Miner for Mac"
             >
               Download for macOS
             </a>
@@ -82,15 +86,24 @@ const Desktop = () => {
             <h2>Linux</h2>
             <p>
               Sequence Miner is available for Ubuntu as a <code>.deb</code>{" "}
-              package file. Install with:{" "}
-              <code>sudo dpkg -i SequenceMiner-1.0.deb</code>
+              package file and RedHat as <code>.rpm</code>. Once downloaded,
+              install with:{" "}
+              <code>sudo dpkg -i sequenceminer_11.0.0-1_amd64.deb</code> or{" "}
+              <code>sudo rpm -ivh sequenceminer-11.0.0-1.x86_64.rpm</code>
             </p>
             <a
               className={common.card__list__link}
-              href={linuxDLUrl}
-              title="Download Sequence Miner for Windows"
+              href={debDLUrl}
+              title="Download Sequence Miner for Ubuntu"
             >
-              Download for Ubuntu
+              Download <code>.deb</code> for Ubuntu
+            </a>
+            <a
+              className={common.card__list__link}
+              href={rpmDLUrl}
+              title="Download Sequence Miner for RedHat &amp; Centos"
+            >
+              Download <code>.rpm</code> for RedHat &amp; Centos
             </a>
           </li>
         </ul>
