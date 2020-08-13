@@ -3,10 +3,10 @@ import Head from "next/head";
 const defaults = {
   title: "GORpipe",
   description: "Genomic Insights at Scale",
-  shareImg: "/gor-pipe-share-img.png"
+  shareImg: "/gor-pipe-share-img.png",
 };
 
-const DocHead = props => {
+const DocHead = (props) => {
   const options = { ...defaults, ...props };
 
   return (
@@ -33,6 +33,21 @@ const DocHead = props => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@genuitysci" />
       <meta name="twitter:creator" content="@genuitysci" />
+
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-79773508-1"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-79773508-1');
+        `,
+        }}
+      />
     </Head>
   );
 };
