@@ -85,6 +85,12 @@
             display: block;
             color: #fff;
           }
+
+          &:hover {
+            @media (min-width: $tablet) {
+              color: #f1f3f5;
+            }
+          }
         }
       }
     }
