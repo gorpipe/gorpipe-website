@@ -68,7 +68,17 @@ const Index = () => {
             Leverage the Spark execution engine, Scala and Python SDK and SQL
             with the Parque columnar storage format.
           </p>
-          <a href="https://colab.research.google.com/drive/1hLNYrO2QeYV26dKi8v-HeYG8K1kkgIVD" className={style.Index__spark__callout} target="_blank">Try it yourself!</a>
+          <ul className={style.Index__spark__callouts}>
+            <li>
+              <a href="https://arxiv.org/abs/2009.00061" target="_blank">Read the paper</a>
+            </li>
+            <li>
+              <a href="https://github.com/gorpipe/sparkgor" target="_blank">Check out the code</a>
+            </li>
+            <li>
+              <a href="https://colab.research.google.com/drive/1hLNYrO2QeYV26dKi8v-HeYG8K1kkgIVD" target="_blank">Try on Google Colab</a>
+            </li>
+          </ul>
         </section>
       </div>
 

@@ -354,24 +354,36 @@
       }
     }
 
-    &__callout {
-      @include font-montserrat;
-      // text-transform: uppercase;
-      padding: 11px 16px;
+    &__callouts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 30px auto 0;
-      width: 200px;
-      background: $blue;
-      border-radius: 21px;
-      font-weight: bold;
-      display: block;
-      color: #fff;
+      flex-direction: column;
 
-      &:hover {
-        color: #f1f3f5;
+      @media (min-width: $desktop) {
+        flex-direction: row;
+        margin: 50px auto 0;
       }
 
-      @media (min-width: $tablet) {
-        margin: 50px auto 0;
+      a {
+        @include font-montserrat;
+        width: 250px;
+        padding: 11px 16px;
+        margin: 10px 0;
+        background: $blue;
+        border-radius: 21px;
+        font-weight: bold;
+        display: block;
+        color: #fff;
+
+        &:hover {
+          color: #f1f3f5;
+        }
+
+        @media (min-width: $desktop) {
+          margin: 0 30px;
+        }
       }
     }
   }
