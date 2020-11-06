@@ -76,7 +76,7 @@ const Index = () => {
               <a href="https://github.com/gorpipe/sparkgor" target="_blank">Check out the code</a>
             </li>
             <li>
-              <a href="https://colab.research.google.com/drive/1hLNYrO2QeYV26dKi8v-HeYG8K1kkgIVD" target="_blank">Try on Google Colab</a>
+              <a href="https://colab.research.google.com/drive/1eJSTP1nMqik8EoUVURiydplKAzZeUmIb" target="_blank">Try on Google Colab</a>
             </li>
           </ul>
         </section>
