@@ -61,6 +61,27 @@ const Index = () => {
         </div>
       </section>
 
+      <div className={style.Index__wrapper}>
+        <section className={style.Index__spark}>
+          <h2>Integration with Spark</h2>
+          <p>
+            Leverage the Spark execution engine, Scala and Python SDK and SQL
+            with the Parque columnar storage format.
+          </p>
+          <ul className={style.Index__spark__callouts}>
+            <li>
+              <a href="https://arxiv.org/abs/2009.00061" target="_blank">Read the paper</a>
+            </li>
+            <li>
+              <a href="https://github.com/gorpipe/sparkgor" target="_blank">Check out the code</a>
+            </li>
+            <li>
+              <a href="https://colab.research.google.com/drive/1eJSTP1nMqik8EoUVURiydplKAzZeUmIb" target="_blank">Try on Google Colab</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
       <section className={style.Index__quicklinks}>
         <div className={style.Index__wrapper}>
           <ul>
@@ -149,15 +170,7 @@ const Index = () => {
         </section>
       </div>
 
-      <div className={style.Index__wrapper}>
-        <section className={style.Index__spark}>
-          <h2>Integration with Spark</h2>
-          <p>
-            Leverage the Spark execution engine, Scala and Python SDK and SQL
-            with the Parque columnar storage format.
-          </p>
-        </section>
-      </div>
+      
     </Layout>
   );
 };
