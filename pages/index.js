@@ -73,7 +73,7 @@ const Index = () => {
               <a href="https://arxiv.org/abs/2009.00061" target="_blank">Read the paper</a>
             </li>
             <li>
-              <a href="https://github.com/gorpipe/sparkgor" target="_blank">Check out the code</a>
+              <a href="https://github.com/gorpipe/gor-spark" target="_blank">Check out the code</a>
             </li>
             <li>
               <a href="https://colab.research.google.com/drive/1eJSTP1nMqik8EoUVURiydplKAzZeUmIb" target="_blank">Try on Google Colab</a>
