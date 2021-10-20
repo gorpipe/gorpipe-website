@@ -45,12 +45,10 @@ const Footer = () => {
               <p>Company</p>
               <ul>
                 <li>
-                  <a href="https://genuitysci.com/our-technology">About</a>
+                  <a href="https://genuitysci.com/our-science/">About</a>
                 </li>
                 <li>
-                  <Link href="/blog">
-                    <a>Blog</a>
-                  </Link>
+                  <a href="https://genuitysci.com/news-and-events/">News</a>                
                 </li>
               </ul>
             </div>

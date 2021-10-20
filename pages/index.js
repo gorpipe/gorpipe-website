@@ -20,7 +20,7 @@ const Index = () => {
           <h1>Open Source Genomic Insights at Scale</h1>
           <p className={style.Index__header__byline}>
             Born at{" "}
-            <a href="https://www.decode.com/">
+            <a href="https://www.decode.com/"> 
               <strong>deCODE genetics</strong>
             </a>
             , the pioneers for population scale genomic research. Raised by{" "}
@@ -29,35 +29,51 @@ const Index = () => {
             </a>
             , the global genomics data and insights partner.
           </p>
-          <div className={style.Index__header__logos}>
-            <a
-              className={style.Index__header__logo}
-              href="https://www.decode.com/"
-            >
-              <img src="/ie-logo.png" title="deCODE genetics corporate logo" />
-            </a>
-            <a
-              className={style.Index__header__logo}
-              href="https://www.genuitysci.com"
-            >
-              <GSLogo title="Genuity Science corporate logo" />
-            </a>
-          </div>
-          <div className={style.Index__header__callouts}>
-            <a
-              className={style.Index__header__callout}
-              href="https://github.com/gorpipe/gor#prerequisites"
-            >
-              Download
-            </a>
+        </div>
+      </section>
 
-            <a
-              className={style.Index__header__callout}
-              href="https://docs.gorpipe.org/"
-            >
-              Documentation
-            </a>
-          </div>
+      <div className={style.Index__wrapper}>
+        <section className={style.Index__spark}>
+          <h2>Getting Started</h2>
+          <p>
+            Start using GORpipe following 
+            <a href="/blog/getting-started-with-gor"> these simple steps.</a>
+            Or check out the GORpipe repository on GitHub.
+          </p>
+        </section>
+      </div>
+
+      <section className={style.Index__quicklinks}>
+        <div className={style.Index__wrapper}>
+          <ul>
+            <li>
+              <a href="https://github.com/gorpipe/gor">
+                <img
+                  src="/code.png"
+                  alt="GORpipe source code"
+                  height="220"
+                  width="220"
+                />
+                <p>Source on GitHub</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/gorpipe/gor/releases">
+                <img
+                  src="/gor-cli.png"
+                  alt="GORpipe releases"
+                  height="220"
+                  width="220"
+                />
+                <p>Latest GORpipe</p>
+              </a>
+            </li>
+          </ul>
+          <p className={style.Index__quicklinks__text}>
+            GORpipe allows analysis of large sets of genomic and phenotypic
+            tabular data using a declarative query language in a parallel
+            execution engine.
+          </p>
         </div>
       </section>
 
@@ -70,64 +86,17 @@ const Index = () => {
           </p>
           <ul className={style.Index__spark__callouts}>
             <li>
-              <a href="https://arxiv.org/abs/2009.00061" target="_blank">Read the paper</a>
+              <a href="https://arxiv.org/abs/2009.00061">Read the paper</a>
             </li>
             <li>
-              <a href="https://github.com/gorpipe/gor-spark" target="_blank">Check out the code</a>
+              <a href="https://github.com/gorpipe/gor-spark">Check out the code</a>
             </li>
             <li>
-              <a href="https://colab.research.google.com/drive/1eJSTP1nMqik8EoUVURiydplKAzZeUmIb" target="_blank">Try on Google Colab</a>
+              <a href="https://colab.research.google.com/drive/1eJSTP1nMqik8EoUVURiydplKAzZeUmIb">Try on Google Colab</a>
             </li>
           </ul>
         </section>
       </div>
-
-      <section className={style.Index__quicklinks}>
-        <div className={style.Index__wrapper}>
-          <ul>
-            <li>
-              <a href="https://github.com/gorpipe/gor">
-                <img
-                  src="/code.png"
-                  alt="Download GORpipe source code"
-                  height="220"
-                  width="220"
-                />
-                <p>Source on GitHub</p>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/gorpipe/gor/releases">
-                <img
-                  src="/gor-cli.png"
-                  alt="Download GORpipe command line interface"
-                  height="220"
-                  width="220"
-                />
-                <p>Get GORpipe</p>
-              </a>
-            </li>
-            <li>
-              <Link href="/desktop">
-                <a>
-                  <img
-                    src="/sm.png"
-                    alt="Download GORpipe desktop application, Sequence Miner"
-                    height="220"
-                    width="220"
-                  />
-                  <p>Install desktop application</p>
-                </a>
-              </Link>
-            </li>
-          </ul>
-          <p className={style.Index__quicklinks__text}>
-            GORpipe allows analysis of large sets of genomic and phenotypic
-            tabular data using a declarative query language in a parallel
-            execution engine.
-          </p>
-        </div>
-      </section>
 
       <div className={style.Index__wrapper}>
         <section className={style.Index__bullets}>
