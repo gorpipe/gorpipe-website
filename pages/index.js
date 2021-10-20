@@ -36,9 +36,11 @@ const Index = () => {
         <section className={style.Index__spark}>
           <h2>Getting Started</h2>
           <p>
-            Start using GORpipe following 
-            <a href="/blog/getting-started-with-gor"> these simple steps.</a>
-            Or check out the GORpipe repository on GitHub.
+            Start using GORpipe following{" "}
+            <a href="/blog/getting-started-with-gor">
+              <strong>these simple steps</strong>
+            </a>
+            . Or check out the GORpipe repository on GitHub.
           </p>
         </section>
       </div>
