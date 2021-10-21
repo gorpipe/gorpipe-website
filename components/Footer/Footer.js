@@ -21,6 +21,9 @@ const Footer = () => {
                 <li>
                   <a href="https://docs.gorpipe.org/">Documentation</a>
                 </li>
+                <li>
+                  <a href="/blog">Blog</a>
+                </li>                
               </ul>
             </div>
 
@@ -45,12 +48,10 @@ const Footer = () => {
               <p>Company</p>
               <ul>
                 <li>
-                  <a href="https://genuitysci.com/our-technology">About</a>
+                  <a href="https://genuitysci.com/our-science/">About</a>
                 </li>
                 <li>
-                  <Link href="/blog">
-                    <a>Blog</a>
-                  </Link>
+                  <a href="https://genuitysci.com/news-and-events/">News</a>                
                 </li>
               </ul>
             </div>
