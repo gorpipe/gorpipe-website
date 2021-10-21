@@ -59,6 +59,6 @@ and add the follwing line
 ````
 
 You are now all set and ready to try out GOR on your tabular genotype and phenotype data.
-For further information on the GOR language see the documentation and checkout other blog posts.
+For further information on the GOR language see the [documentation](https://docs.gorpipe.org/) and checkout [other blog posts](https://gorpipe.org/blog).
 
 Happy GORing!
