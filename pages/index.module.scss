@@ -230,6 +230,10 @@
         margin: 0 auto;
       }
 
+      img:hover {
+        opacity: 0.5;
+      }
+
       p {
         max-width: 220px;
         margin: $doubleSpace auto 0;
