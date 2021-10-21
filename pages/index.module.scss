@@ -354,6 +354,17 @@
       }
     }
 
+    a {
+      @include font-montserrat;
+      white-space: nowrap;
+      font-weight: bold;
+      color: $blue;
+
+      &:hover {
+        color: #3d9cfa;
+      }
+    }
+
     &__callouts {
       display: flex;
       justify-content: center;
