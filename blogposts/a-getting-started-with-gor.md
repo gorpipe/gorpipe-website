@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with GORpipe"
+title: "Getting started with GORpipe"
 description: "Downloading GORpipe"
 author: "Heiðdís Rut Hreinsdóttir"
 date: "2021-10-19"
@@ -59,6 +59,6 @@ and add the follwing line
 ````
 
 You are now all set and ready to try out GOR on your tabular genotype and phenotype data.
-For further information on the GOR language see the [documentation](https://docs.gorpipe.org/) and checkout [other blog posts](https://gorpipe.org/blog).
+For further information on the GOR query language see the [documentation](https://docs.gorpipe.org/) and check out [other blog posts](/blog).
 
 Happy GORing!
