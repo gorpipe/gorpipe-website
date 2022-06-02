@@ -85,7 +85,7 @@ Note that the rownum column can be handy to easily retrieve a given row, or retr
 
 Additional basic joining methods include the **multimap**, **merge** and **inset** commands. The **map** command above will result in a comma separated value where the right source contains multiple rows/occurances for the mapping column, **multimap** on the other hand matches all occurrences resulting in multiple rows. The **merge** command will append one data source to another and **inset** will filter the right source based on the data in the left source.
 
-Here is an example of using **merge** and a nested query that will result in all duplicated rows. If there is a miss-match between the number of columns of the left and right data source empty values are provided.
+Here is an example of using **merge** and a nested query that will result in all duplicated rows. If there is a mismatch between the number of columns of the left and right data source empty values are provided.
 
 ```
 nor -h transQTL_vars.tsv | merge <(nor -h transQTL_vars.tsv)
