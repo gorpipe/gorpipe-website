@@ -25,7 +25,7 @@ nor -h lab_measurements.tsv
 | group -gc sex -avg -ic age_in_years
 ```
 
-Another interesting question might be to return all individuals with two or more lab measurements on a given date
+Another interesting question might be to return all individuals with two or more lab measurements on any given date
 
 ```
 nor -h lab_measurements.tsv
@@ -33,10 +33,14 @@ nor -h lab_measurements.tsv
 | where allCount >= 2
 ```
 
-TODO:
+Finally we want to categorize our subjects based on the severity of their symptoms. Defining the most severe case as anyone that has more than two lab measurements above 0.5 that occur within one year of one another and moderately severe as those with at least one measrement above 0.5 in the past 3 years, others will be categorized as low severity
 
---> Define severity based on number of lab measurements above 0.5 that occur within 1 year of one another
+```
+nor -h lab_measurements.tsv
+| 
+```
 
+Notice the use of ...
 
 Make sure to check out other [blog posts](/blog) - Happy GORing!
 
