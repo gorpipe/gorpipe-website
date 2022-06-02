@@ -239,9 +239,10 @@ Since one file is variant based and the other gene based we will use **join** al
 
 ```
 gor comb_data.gorz
-| join -snpseg genes.gorz
+| join -snpseg -rprefix genes genes.gorz
+| replace genes_* replace(listfilter(#rc,'x!="PTCSC2"'),',',', ')
 ```
-
+Notice the use of the *-rprefix* flag, this will add a given prefix to all columns from the right source. Also notice the **replace** with the *#rc*, here we are applying the **replace** command to all columns starting with the *genes_* prefix and the *listfilter()* function will repeat for all columns and all elements within the column list.
 The variations of options to include with the **join** command are many, adding a *-ic* flag will return overlap count, adding *-xl* for additional equi-joins and *-f* to perform a fuzzy join to name a few. For more information on GOR joins check out the [documentation](https://docs.gorpipe.org/command/JOIN.html?highlight=join#join-1). 
 
 As you can see querying genomically ordered data is a breeze with the GOR query language!
