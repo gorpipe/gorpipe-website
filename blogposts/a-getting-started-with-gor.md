@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with GORpipe"
+title: "Getting started with GORpipe"
 description: "Downloading GORpipe"
 author: "Heiðdís Rut Hreinsdóttir"
 date: "2021-10-19"
@@ -22,7 +22,7 @@ Now let's make sure you have everything working as expected on your machine by r
 ```bash
 ./gorscripts-<VERSION>-dist/bin/gorpipe "gor <(gorrows -p chr1:1000-20000 -segment 100 -step 50 | multimap -cartesian <(norrows 10 | group -lis -sc #1)) | top 10"
 ```
-This command generates some arbitrary  genomicly ordered data on chromosome 1, position 1000-20000, with a column including a list of row numbers. Note that you have to substitute  the <\VERSION\> with the GORpipe version you downloaded.
+This command generates some arbitrary  genomically ordered data on chromosome 1, position 1000-20000, with a column including a list of row numbers. Note that you have to substitute  the <\VERSION\> with the GORpipe version you downloaded.
 Your output should look something like this:
 ```bash
 chrom   bpStart bpStop  lis_RowNum
@@ -59,6 +59,6 @@ and add the follwing line
 ````
 
 You are now all set and ready to try out GOR on your tabular genotype and phenotype data.
-For further information on the GOR language see the [documentation](https://docs.gorpipe.org/) and checkout [other blog posts](https://gorpipe.org/blog).
+For further information on the GOR query language see the [documentation](https://docs.gorpipe.org/) and check out [other blog posts](/blog).
 
 Happy GORing!
