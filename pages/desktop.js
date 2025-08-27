@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import DocHead from "../components/DocHead";
+import React from 'react';
 
 import common from "styles/common.module.scss";
 

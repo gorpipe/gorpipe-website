@@ -1,6 +1,6 @@
-@import "./reset";
-@import "./fonts";
-@import "./variables";
+@use "./reset" as *;
+@use "./fonts" as *;
+@use "./variables" as *;
 
 @-ms-viewport {
   width: device-width;

@@ -27,7 +27,11 @@ const Index = () => {
             <a href="https://www.genuitysci.com">
               <strong>Genuity Science</strong>
             </a>
-            , the global genomics data and insights partner.
+            , the global genomics data and insights partner.  Matured with{" "}
+            <a href="https://www.genedx.com">
+              <strong>GeneDx</strong>
+            </a>
+            , the leader in genetic diagnosis.
           </p>
         </div>
       </section>

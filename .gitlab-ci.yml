@@ -1,6 +1,6 @@
 pages:
   stage: deploy
-  image: node:14.5
+  image: node:24.5.0
   script:
     - npm ci
     - npm run export
@@ -10,4 +10,4 @@ pages:
     paths:
       - public
   only:
-    - master
+    - main

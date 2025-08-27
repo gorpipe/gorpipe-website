@@ -5,11 +5,32 @@ const plugins = require("next-compose-plugins");
 
 const config = {
   poweredByHeader: false,
+  output: 'export',
 
   webpack: function (config) {
     config.module.rules.push({
       test: /\.md$/,
       use: "raw-loader",
+    });
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        {
+          loader: '@svgr/webpack',
+          options: {
+            svgo: true,
+            svgoConfig: {
+              plugins: [
+                {
+                  name: 'removeViewBox',
+                  active: false,
+                },
+              ],
+            },
+          },
+        },
+      ],
     });
 
     config.resolve.modules = [path.resolve(__dirname, ""), "node_modules"];
@@ -63,6 +84,6 @@ const config = {
 };
 
 module.exports = plugins(
-  [[reactSvg, { include: path.resolve(__dirname, "assets") }]],
-  config
-);
+      [[reactSvg, {include: path.resolve(__dirname, "assets") }]],
+      config
+  );

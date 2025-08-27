@@ -1,5 +1,7 @@
+@use "sass:math";
+
 $space: 8px;
-$halfSpace: $space/2;
+$halfSpace:  math.div($space, 2);
 $doubleSpace: $space * 2;
 $tripleSpace: $space * 3;
 $quadSpace: $space * 4;

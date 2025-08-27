@@ -29,10 +29,8 @@ const Blog = (props) => {
 const PostLink = ({ slug, title, image }) => (
   <li className={style.Blog__postlist__item}>
     <Link href="/blog/[slug]" as={`/blog/${slug}`}>
-      <a>
-        <img src={image} alt={title} />
-        <h2>{title}</h2>
-      </a>
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
     </Link>
   </li>
 );

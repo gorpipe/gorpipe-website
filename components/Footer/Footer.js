@@ -9,9 +9,7 @@ const Footer = () => {
       <div className={style.Footer__wrapper}>
         <div className={style.Footer__sup}>
           <Link href="/">
-            <a>
-              <GORLogoOutlineText title="GOR" />
-            </a>
+            <GORLogoOutlineText title="GOR" />
           </Link>
 
           <section className={style.Footer__links}>
@@ -48,10 +46,10 @@ const Footer = () => {
               <p>Company</p>
               <ul>
                 <li>
-                  <a href="https://genuitysci.com/our-science/">About</a>
+                  <a href="https://genedx.com/about/">About</a>
                 </li>
                 <li>
-                  <a href="https://genuitysci.com/news-and-events/">News</a>                
+                  <a href="https://genedx.com/blog/">Blog</a>
                 </li>
               </ul>
             </div>
@@ -59,7 +57,7 @@ const Footer = () => {
         </div>
 
         <section className={style.Footer__sub}>
-          © {new Date().getFullYear()} Genuity Science
+          © {new Date().getFullYear()} GeneDx
         </section>
       </div>
     </footer>

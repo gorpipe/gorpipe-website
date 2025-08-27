@@ -31,8 +31,8 @@ const DocHead = (props) => {
       <meta name="twitter:description" content={options.description} />
       <meta name="twitter:image" content={options.shareImg} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@genuitysci" />
-      <meta name="twitter:creator" content="@genuitysci" />
+      <meta name="twitter:site" content="@genedx" />
+      <meta name="twitter:creator" content="@genedx" />
 
     </Head>
   );

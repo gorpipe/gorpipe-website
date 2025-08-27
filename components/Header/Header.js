@@ -16,9 +16,7 @@ const Header = () => {
     <header className={headerClasses}>
       <div className={style.Header__wrapper}>
         <Link href="/">
-          <a className={style.Header__logo}>
-            <GORLogoText title="GOR" />
-          </a>
+          <GORLogoText alt="GOR" title="GOR" />
         </Link>
         <nav className={style.Header__menu}>
           <ul>
@@ -48,8 +46,8 @@ const Header = () => {
 
 const NavLink = ({ text, href }) => (
   <li>
-    <Link href={href}>
-      <a className={style.Header__menu__item}>{text}</a>
+    <Link href={href} className={style.Header__menu__item}>
+      {text}
     </Link>
   </li>
 );
