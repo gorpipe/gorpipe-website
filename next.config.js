@@ -62,7 +62,7 @@ const config = {
 
     // Add blogs to the routes map
     blogSlugs.forEach((blog) => {
-      routes[`/gorpipe-website/blog/${blog}`] = { page: "/blog/[slug]", query: { slug: blog } };
+      routes[`/blog/${blog}`] = { page: "/blog/[slug]", query: { slug: blog } };
     });
 
     // get tutorial files
@@ -75,7 +75,7 @@ const config = {
 
     // Add tutorials to the routes map
     tutorialSlugs.forEach((tutorial) => {
-      routes[`/gorpipe-website/tutorials/${tutorial}`] = {
+      routes[`/tutorials/${tutorial}`] = {
         page: "/tutorials/[slug]",
         query: { slug: tutorial },
       };
