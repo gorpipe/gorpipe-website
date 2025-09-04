@@ -29,7 +29,7 @@ const Header = () => {
                 Documentation
               </a>
             </li>
-            <NavLink text="Blog" href="/gorpipe-website/blog" />
+            <NavLink text="Blog" href="/blog" />
             <GHLink />
           </ul>
         </nav>

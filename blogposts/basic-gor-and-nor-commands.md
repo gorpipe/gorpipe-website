@@ -3,7 +3,7 @@ title: "Basic GOR and NOR commands"
 description: "Learning the basics of GOR and NOR"
 author: "Heiðdís Rut Hreinsdóttir"
 date: "2022-04-19"
-image: /gorpipe-website/blogs/laptop.png
+image: /blogs/laptop.png
 ---
 ## You've installed GORpipe what next?
 

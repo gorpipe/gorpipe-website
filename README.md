@@ -11,12 +11,12 @@ To write a blog post, create a markdown file in the blogposts directory. The fil
 title: "Amazing Title"
 author: "Author's Name"
 date: "YYYY-MM-DD"
-image: /gorpipe-website/blogs/gorpipe.jpg
+image: /blogs/gorpipe.jpg
 ---
 (body text here)
 ```
 
-A hero image should be included with a blog entry. Drop it in the `public/blogs` folder and reference it by name, starting with a `/gorpipe-website/blogs/`, like in the example above. Images should be at least 1200 px wide, and in at least 2:1 ratio (at least 600px height), but try to mind filesizes, e.g. by using compressed jpegs. Images cannot be larger than 5.5 mb. These constraints are both for asthetic reasons on this web page, as well as requirements on social media platforms for share cards.
+A hero image should be included with a blog entry. Drop it in the `public/blogs` folder and reference it by name, starting with a `/blogs/`, like in the example above. Images should be at least 1200 px wide, and in at least 2:1 ratio (at least 600px height), but try to mind filesizes, e.g. by using compressed jpegs. Images cannot be larger than 5.5 mb. These constraints are both for asthetic reasons on this web page, as well as requirements on social media platforms for share cards.
 
 Other images and elements can of course be included in the blog posts, as part of the markdown markup written in the post.
 

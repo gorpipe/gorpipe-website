@@ -3,7 +3,7 @@ title: "Longitudinal phenotype analysis"
 description: "Longitudinal phenotype analysis"
 author: "Heiðdís Rut Hreinsdóttir"
 date: "2022-05-30"
-image: /gorpipe-website/blogs/data_distribution.png
+image: /blogs/data_distribution.png
 ---
 ## Analysing longitudinal phenotype data with NOR
 

@@ -3,7 +3,7 @@ title: "Getting started with GORpipe"
 description: "Downloading GORpipe"
 author: "Heiðdís Rut Hreinsdóttir"
 date: "2021-10-19"
-image: /gorpipe-website/blogs/gorcli.png
+image: /blogs/gorcli.png
 ---
 
 ## Make sure you have the correct prerequisites 

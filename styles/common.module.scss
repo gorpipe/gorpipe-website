@@ -117,7 +117,7 @@
       display: block;
       font-weight: bold;
       margin-top: $tripleSpace;
-      background: url("/gorpipe-website/arrow_blue.svg") no-repeat;
+      background: url("/arrow_blue.svg") no-repeat;
       padding: 0 0 0 40px;
       line-height: 16px;
 
@@ -134,7 +134,7 @@
 
   &__callout_link {
     @include font-montserrat;
-    background: $blue url("/gorpipe-website/arrow_white.svg") no-repeat right 32px top 50%;
+    background: $blue url("/arrow_white.svg") no-repeat right 32px top 50%;
     color: #fff;
     font-weight: bold;
     line-height: 88px;
