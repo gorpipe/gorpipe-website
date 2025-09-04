@@ -5,7 +5,9 @@ const plugins = require("next-compose-plugins");
 
 const config = {
   poweredByHeader: false,
+  basePath: "/gorpipe-website",
   output: 'export',
+  reactStrictMode: true,
 
   webpack: function (config) {
     config.module.rules.push({
