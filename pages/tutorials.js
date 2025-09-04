@@ -11,10 +11,10 @@ const Tutorials = () => {
         <h2>Tutorials</h2>
         <ul>
           <li>
-            <a href="/tutorials/gor-and-nor">GOR and NOR</a>
+            <a href="/gorpipe-website/tutorials/gor-and-nor">GOR and NOR</a>
           </li>
           <li>
-            <a href="/tutorials/phenotypes">Phenotypes</a>
+            <a href="/gorpipe-website/tutorials/phenotypes">Phenotypes</a>
           </li>
         </ul>
       </div>

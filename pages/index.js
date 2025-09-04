@@ -41,7 +41,7 @@ const Index = () => {
           <h2>Getting Started</h2>
           <p>
             Start using GORpipe following{" "}
-            <a href="/blog/a-getting-started-with-gor">
+            <a href="/gorpipe-website/blog/a-getting-started-with-gor">
               <strong>these simple steps</strong>
             </a>
             . Or check out the GORpipe repository on GitHub.
@@ -55,7 +55,7 @@ const Index = () => {
             <li>
               <a href="https://github.com/gorpipe/gor">
                 <img
-                  src="/code.png"
+                  src="/gorpipe-website/code.png"
                   alt="GORpipe source code"
                   height="220"
                   width="220"
@@ -66,7 +66,7 @@ const Index = () => {
             <li>
               <a href="https://github.com/gorpipe/gor/releases">
                 <img
-                  src="/gor-cli.png"
+                  src="/gorpipe-website/gor-cli.png"
                   alt="GORpipe releases"
                   height="220"
                   width="220"

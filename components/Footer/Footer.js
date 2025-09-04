@@ -20,7 +20,7 @@ const Footer = () => {
                   <a href="https://docs.gorpipe.org/">Documentation</a>
                 </li>
                 <li>
-                  <a href="/blog">Blog</a>
+                  <a href="/gorpipe-website/blog">Blog</a>
                 </li>                
               </ul>
             </div>
