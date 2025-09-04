@@ -44,10 +44,10 @@ const config = {
   exportPathMap: function () {
     // when a new page is created, it must be added here
     const routes = {
-      "/": { page: "/gorpipe-website/" },
-      "/blog": { page: "/gorpipe-website/blog" },
-      "/desktop": { page: "/gorpipe-website/desktop" },
-      "/tutorials": { page: "/gorpipe-website/tutorials" },
+      "/gorpipe-website/": { page: "/" },
+      "/gorpipe-website/blog": { page: "/blog" },
+      "/gorpipe-website/desktop": { page: "/desktop" },
+      "/gorpipe-website/tutorials": { page: "/tutorials" },
     };
 
     // below is the dynamic mapping of all blog posts in the blogposts directory
@@ -62,7 +62,7 @@ const config = {
 
     // Add blogs to the routes map
     blogSlugs.forEach((blog) => {
-      routes[`/blog/${blog}`] = { page: "/blog/[slug]", query: { slug: blog } };
+      routes[`/gorpipe-website/blog/${blog}`] = { page: "/blog/[slug]", query: { slug: blog } };
     });
 
     // get tutorial files
@@ -75,7 +75,7 @@ const config = {
 
     // Add tutorials to the routes map
     tutorialSlugs.forEach((tutorial) => {
-      routes[`/tutorials/${tutorial}`] = {
+      routes[`/gorpipe-website/tutorials/${tutorial}`] = {
         page: "/tutorials/[slug]",
         query: { slug: tutorial },
       };
