@@ -34,7 +34,7 @@ const Desktop = () => {
       <DocHead title="GORpipe desktop client - GORpipe" />
       <div className={common.card}>
         <img
-          src="/SM_screenshot.jpg"
+          src="/gorpipe-website/SM_screenshot.jpg"
           alt="Sequence Miner screenshot"
           className={common.card__image}
         />

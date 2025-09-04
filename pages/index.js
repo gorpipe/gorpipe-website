@@ -41,7 +41,7 @@ const Index = () => {
           <h2>Getting Started</h2>
           <p>
             Start using GORpipe following{" "}
-            <a href="/blog/a-getting-started-with-gor">
+            <a href="/gorpipe-website/blog/a-getting-started-with-gor">
               <strong>these simple steps</strong>
             </a>
             . Or check out the GORpipe repository on GitHub.
