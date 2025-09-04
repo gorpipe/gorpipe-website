@@ -44,10 +44,10 @@ const config = {
   exportPathMap: function () {
     // when a new page is created, it must be added here
     const routes = {
-      "/gorpipe-website/": { page: "/" },
-      "/gorpipe-website/blog": { page: "/blog" },
-      "/gorpipe-website/desktop": { page: "/desktop" },
-      "/gorpipe-website/tutorials": { page: "/tutorials" },
+      "/": { page: "/" },
+      "/blog": { page: "/blog" },
+      "/desktop": { page: "/desktop" },
+      "/tutorials": { page: "/tutorials" },
     };
 
     // below is the dynamic mapping of all blog posts in the blogposts directory

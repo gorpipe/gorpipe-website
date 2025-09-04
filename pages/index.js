@@ -55,7 +55,7 @@ const Index = () => {
             <li>
               <a href="https://github.com/gorpipe/gor">
                 <img
-                  src="/code.png"
+                  src="/gorpipe-website/code.png"
                   alt="GORpipe source code"
                   height="220"
                   width="220"
@@ -66,7 +66,7 @@ const Index = () => {
             <li>
               <a href="https://github.com/gorpipe/gor/releases">
                 <img
-                  src="/gor-cli.png"
+                  src="/gorpipe-website/gor-cli.png"
                   alt="GORpipe releases"
                   height="220"
                   width="220"
