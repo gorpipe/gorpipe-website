@@ -45,7 +45,7 @@ const config = {
     // when a new page is created, it must be added here
     const routes = {
       "/": { page: "/" },
-      "/blog": { page: "/blog" },
+      "/blog": { page: "/gorpipe-website/blog" },
       "/desktop": { page: "/desktop" },
       "/tutorials": { page: "/tutorials" },
     };
