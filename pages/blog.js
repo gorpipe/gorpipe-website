@@ -28,7 +28,7 @@ const Blog = (props) => {
 
 const PostLink = ({ slug, title, image }) => (
   <li className={style.Blog__postlist__item}>
-    <Link href="/gorpipe-website/blog/[slug]" as={`/blog/${slug}`}>
+    <Link href="/gorpipe-website/blog/[slug]" as={`/gorpipe-website/blog/${slug}`}>
       <img src={image} alt={title} />
       <h2>{title}</h2>
     </Link>
