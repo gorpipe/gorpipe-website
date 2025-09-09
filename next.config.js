@@ -5,8 +5,8 @@ const plugins = require("next-compose-plugins");
 
 const config = {
   poweredByHeader: false,
-  basePath: "/gorpipe-website",
-  assetPrefix: '/gorpipe-website/',
+  //basePath: "/gorpipe-website",
+  //assetPrefix: '/gorpipe-website/',
   output: 'export',
   reactStrictMode: true,
 

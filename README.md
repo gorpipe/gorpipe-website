@@ -11,7 +11,7 @@ To write a blog post, create a markdown file in the blogposts directory. The fil
 title: "Amazing Title"
 author: "Author's Name"
 date: "YYYY-MM-DD"
-image: /gorpipe-website/blogs/gorpipe.jpg
+image: /blogs/gorpipe.jpg
 ---
 (body text here)
 ```

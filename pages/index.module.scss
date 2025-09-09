@@ -20,34 +20,34 @@
     }
 
     @at-root :global(.bg1) & {
-      background: url("/gorpipe-website/cover1_mobile.jpg") no-repeat top right / cover;
+      background: url("/cover1_mobile.jpg") no-repeat top right / cover;
 
       @media (min-width: $tablet) {
-        background: url("/gorpipe-website/cover1.jpg") no-repeat top center / cover;
+        background: url("/cover1.jpg") no-repeat top center / cover;
       }
     }
 
     @at-root :global(.bg2) & {
-      background: url("/gorpipe-website/cover2_mobile.jpg") no-repeat top center / cover;
+      background: url("/cover2_mobile.jpg") no-repeat top center / cover;
 
       @media (min-width: $tablet) {
-        background: url("/gorpipe-website/cover2.jpg") no-repeat top center / cover;
+        background: url("/cover2.jpg") no-repeat top center / cover;
       }
     }
 
     @at-root :global(.bg3) & {
-      background: url("/gorpipe-website/cover3_mobile.jpg") no-repeat top center / cover;
+      background: url("/cover3_mobile.jpg") no-repeat top center / cover;
 
       @media (min-width: $tablet) {
-        background: url("/gorpipe-website/cover3.jpg") no-repeat bottom center / cover;
+        background: url("/cover3.jpg") no-repeat bottom center / cover;
       }
     }
 
     @at-root :global(.bg4) & {
-      background: url("/gorpipe-website/cover4_mobile.jpg") no-repeat top center / cover;
+      background: url("/cover4_mobile.jpg") no-repeat top center / cover;
 
       @media (min-width: $tablet) {
-        background: url("/gorpipe-website/cover4.jpg") no-repeat 50% 62% / cover;
+        background: url("/cover4.jpg") no-repeat 50% 62% / cover;
       }
     }
 
