@@ -5,10 +5,7 @@ const plugins = require("next-compose-plugins");
 
 const config = {
   poweredByHeader: false,
-  //basePath: "/gorpipe-website",
-  //assetPrefix: '/gorpipe-website/',
-  output: 'export',
-  reactStrictMode: true,
+    output: 'export',
 
   webpack: function (config) {
     config.module.rules.push({
