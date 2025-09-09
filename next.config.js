@@ -5,7 +5,7 @@ const plugins = require("next-compose-plugins");
 
 const config = {
   poweredByHeader: false,
-  output: 'export',
+    output: 'export',
 
   webpack: function (config) {
     config.module.rules.push({
